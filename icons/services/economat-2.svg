@@ -1,0 +1,14 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="24" height="24" fill="white"/>
+<rect x="21.6" y="2.40002" width="19.2" height="4.8" transform="rotate(90 21.6 2.40002)" fill="black"/>
+<rect x="18" y="3.60004" width="2.4" height="4.8" fill="white"/>
+<rect x="18.3" y="18.3" width="1.8" height="1.8" rx="0.9" fill="white"/>
+<rect x="16.7833" y="2.40112" width="19.2" height="4.8" transform="rotate(95.393 16.7833 2.40112)" fill="black"/>
+<rect x="13.0864" y="3.25745" width="2.4" height="4.8" transform="rotate(5.39295 13.0864 3.25745)" fill="white"/>
+<rect x="12.0035" y="17.9206" width="1.8" height="1.8" rx="0.9" transform="rotate(5.39295 12.0035 17.9206)" fill="white"/>
+<path d="M3.25812 6.25427L3.7312 4.99881L4.45173 6.13055L5.93637 20.4538L4.74277 20.5775L3.25812 6.25427Z" fill="black"/>
+<path d="M7.75288 6.09721L8.53811 5.00937L8.93725 6.29026L6.62068 20.5027L5.43631 20.3097L7.75288 6.09721Z" fill="black"/>
+<line x1="3.00002" y1="9.59998" x2="3.00003" y2="21.6" stroke="black" stroke-width="1.2"/>
+<line x1="9.00002" y1="9.59998" x2="9.00002" y2="21.6" stroke="black" stroke-width="1.2"/>
+<line x1="9.44995" y1="21" x2="2.39995" y2="21" stroke="black" stroke-width="1.2"/>
+</svg>
