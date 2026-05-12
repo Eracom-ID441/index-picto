@@ -21,27 +21,13 @@
 
 ```css
 /* Arrière-plans */
---color-bg-page:        #EDF0F5 ;   /* fond général de la page */
---color-blue: 			#0145F2 ; 
+--color-bg:		#EDF0F5 ;	/* fond général de la page */
+--color-blue: 	#0145F2 ; 	/* couleur du header et des bordures et textes */
 
 /* Textes */
---color-text-primary:   [#0F172A];   /* titres, noms d'icônes */
---color-text-secondary: [#64748B];   /* labels catégories, mots-clés */
---color-text-placeholder:[#94A3B8];  /* placeholder du champ de recherche */
+--color-text:	#070707 ;	/* titres, noms d'icônes */
+--color-lien:	#0145F2 ;	/* lien voir plus*/
 
-/* Accent & interactivité */
---color-accent:         [#2563EB];   /* catégorie active, bouton primaire */
---color-accent-hover:   [#1D4ED8];   /* hover sur éléments accent */
---color-accent-light:   [#EFF6FF];   /* fond badge catégorie active */
-
-/* Bordures */
---color-border:         [#E2E8F0];   /* bordures cartes, séparateurs */
---color-border-focus:   [#2563EB];   /* outline focus clavier */
-
-/* Feedback */
---color-success:        [#16A34A];   /* bouton "✓ Copié !" */
---color-error:          [#DC2626];   /* message d'erreur */
-```
 
 ---
 
