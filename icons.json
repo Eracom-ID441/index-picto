@@ -1,0 +1,17 @@
+{
+  "categories": [
+    {
+      "id": "ui",
+      "label": "Interface",
+      "icons": [
+        {
+          "id": "arrow-right",
+          "name": "Arrow Right",
+          "keywords": ["arrow", "next", "forward", "direction"],
+          "file": "icons/ui/arrow-right.svg",
+          "category": "ui"
+        }
+      ]
+    }
+  ]
+}
