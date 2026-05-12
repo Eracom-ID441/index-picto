@@ -21,12 +21,8 @@
 
 ```css
 /* Arrière-plans */
---color-bg-page:        [#F8FAFC];   /* fond général de la page */
---color-bg-sidebar:     [#FFFFFF];   /* fond de la sidebar catégories */
---color-bg-card:        [#FFFFFF];   /* fond d'une carte icône */
---color-bg-card-hover:  [#F1F5F9];   /* fond d'une carte au survol */
---color-bg-modal:       [#FFFFFF];   /* fond de la modal */
---color-bg-overlay:     [rgba(0,0,0,0.4)]; /* overlay derrière la modal */
+--color-bg-page:        #EDF0F5 ;   /* fond général de la page */
+--color-blue: 			#0145F2 ; 
 
 /* Textes */
 --color-text-primary:   [#0F172A];   /* titres, noms d'icônes */
