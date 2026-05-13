@@ -128,7 +128,36 @@ La modal affiche :
           "name": "string",     // nom lisible, ex: "Arrow Right"
           "keywords": ["string"],  // mots-clés pour la recherche
           "file": "string",     // chemin relatif, ex: "icons/ui/arrow-right.svg"
-          "category": "string"  // répète l'id de la catégorie parente
+          "category": "string",  // répète l'id de la catégorie parente
+          "author": "classe ID451", // auteur de l'icone
+          "description": "" // description de l'icone
+        }
+      ]
+    }
+  ]
+}
+```
+
+Un exemple: 
+
+```json
+{
+  "categories": [
+    {
+      "id": "audiovisuel",
+      "label": "Audiovisuel",
+      "icons": [
+        {
+          "id": "camera",
+          "name": "Caméra",
+          "keywords": [
+            "camera",
+            "audiovisuel"
+          ],
+          "file": "icons/audiovisuel/camera-1.svg",
+          "category": "audiovisuel",
+          "author": "classe ID451",
+          "description": ""
         }
       ]
     }
@@ -138,4 +167,13 @@ La modal affiche :
 
 ---
 
+## Liste des catégories: 
 
+- audiovisuel
+- graphisme
+- photo
+- web
+- game-design
+- administration
+- batiment
+- services

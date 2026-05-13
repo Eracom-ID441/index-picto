@@ -1,15 +1,1258 @@
 {
   "categories": [
     {
-      "id": "ui",
-      "label": "Interface",
+      "id": "audiovisuel",
+      "label": "Audiovisuel",
       "icons": [
         {
-          "id": "arrow-right",
-          "name": "Arrow Right",
-          "keywords": ["arrow", "next", "forward", "direction"],
-          "file": "icons/ui/arrow-right.svg",
-          "category": "ui"
+          "id": "animation-1",
+          "name": "Animation #1",
+          "keywords": [
+            "animation",
+            "personnage",
+            "audiovisuel"
+          ],
+          "file": "icons/audiovisuel/animation-1.svg",
+          "category": "audiovisuel",
+          "author": "classe ID451",
+          "description": ""
+        },
+        {
+          "id": "animation-2",
+          "name": "Animation 2",
+          "keywords": [
+            "animation",
+            "audiovisuel"
+          ],
+          "file": "icons/audiovisuel/animation-2.svg",
+          "category": "audiovisuel",
+          "author": "classe ID451",
+          "description": ""
+        },
+        {
+          "id": "audio",
+          "name": "Audio",
+          "keywords": [
+            "audio",
+            "audiovisuel"
+          ],
+          "file": "icons/audiovisuel/audio.svg",
+          "category": "audiovisuel",
+          "author": "classe ID451",
+          "description": ""
+        },
+        {
+          "id": "camera",
+          "name": "Caméra",
+          "keywords": [
+            "camera",
+            "audiovisuel"
+          ],
+          "file": "icons/audiovisuel/camera-1.svg",
+          "category": "audiovisuel",
+          "author": "classe ID451",
+          "description": ""
+        },
+        {
+          "id": "camera2",
+          "name": "Camera 2",
+          "keywords": [
+            "camera",
+            "audiovisuel"
+          ],
+          "file": "icons/audiovisuel/camera-2.svg",
+          "category": "audiovisuel",
+          "author": "classe ID451",
+          "description": ""
+        },
+        {
+          "id": "film",
+          "name": "Film",
+          "keywords": [
+            "film",
+            "audiovisuel"
+          ],
+          "file": "icons/audiovisuel/film.svg",
+          "category": "audiovisuel",
+          "author": "classe ID451",
+          "description": ""
+        },
+        {
+          "id": "micro",
+          "name": "Micro",
+          "keywords": [
+            "micro",
+            "audiovisuel"
+          ],
+          "file": "icons/audiovisuel/micro.svg",
+          "category": "audiovisuel",
+          "author": "classe ID451",
+          "description": ""
+        },
+        {
+          "id": "mix",
+          "name": "Mix",
+          "keywords": [
+            "mix",
+            "audiovisuel"
+          ],
+          "file": "icons/audiovisuel/mix.svg",
+          "category": "audiovisuel",
+          "author": "classe ID451",
+          "description": ""
+        },
+        {
+          "id": "son",
+          "name": "Son",
+          "keywords": [
+            "son",
+            "audiovisuel"
+          ],
+          "file": "icons/audiovisuel/son.svg",
+          "category": "audiovisuel",
+          "author": "classe ID451",
+          "description": ""
+        },
+        {
+          "id": "studio-son-1",
+          "name": "Studio son 1",
+          "keywords": [
+            "studio",
+            "son",
+            "audiovisuel"
+          ],
+          "file": "icons/audiovisuel/studio-son-1.svg",
+          "category": "audiovisuel",
+          "author": "classe ID451",
+          "description": ""
+        },
+        {
+          "id": "studio-son-2",
+          "name": "Studio son 2",
+          "keywords": [
+            "studio",
+            "son",
+            "audiovisuel"
+          ],
+          "file": "icons/audiovisuel/studio-son-2.svg",
+          "category": "audiovisuel",
+          "author": "classe ID451",
+          "description": ""
+        },
+        {
+          "id": "tournage",
+          "name": "Tournage",
+          "keywords": [
+            "tournage",
+            "audiovisuel"
+          ],
+          "file": "icons/audiovisuel/tournage.svg",
+          "category": "audiovisuel",
+          "author": "classe ID451",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "id": "graphisme",
+      "label": "Graphisme",
+      "icons": [
+        {
+          "id": "carton-plein",
+          "name": "Carton plein",
+          "keywords": [
+            "carton",
+            "plein",
+            "graphisme"
+          ],
+          "file": "icons/graphisme/carton-plein.svg",
+          "category": "graphisme",
+          "author": "classe ID451",
+          "description": ""
+        },
+        {
+          "id": "carton-vide",
+          "name": "Carton vide",
+          "keywords": [
+            "carton",
+            "vide",
+            "graphisme"
+          ],
+          "file": "icons/graphisme/carton-vide.svg",
+          "category": "graphisme",
+          "author": "classe ID451",
+          "description": ""
+        },
+        {
+          "id": "creativite",
+          "name": "Creativite",
+          "keywords": [
+            "creativite",
+            "graphisme"
+          ],
+          "file": "icons/graphisme/creativite.svg",
+          "category": "graphisme",
+          "author": "classe ID451",
+          "description": ""
+        },
+        {
+          "id": "direction-artistique-plein",
+          "name": "Direction artistique plein",
+          "keywords": [
+            "direction",
+            "artistique",
+            "plein",
+            "graphisme"
+          ],
+          "file": "icons/graphisme/direction-artistique-plein.svg",
+          "category": "graphisme",
+          "author": "classe ID451",
+          "description": ""
+        },
+        {
+          "id": "direction-artistique-vide",
+          "name": "Direction artistique vide",
+          "keywords": [
+            "direction",
+            "artistique",
+            "vide",
+            "graphisme"
+          ],
+          "file": "icons/graphisme/direction-artistique-vide.svg",
+          "category": "graphisme",
+          "author": "classe ID451",
+          "description": ""
+        },
+        {
+          "id": "document",
+          "name": "Document",
+          "keywords": [
+            "document",
+            "graphisme"
+          ],
+          "file": "icons/graphisme/document.svg",
+          "category": "graphisme",
+          "author": "classe ID451",
+          "description": ""
+        },
+        {
+          "id": "flyer",
+          "name": "Flyer",
+          "keywords": [
+            "flyer",
+            "graphisme"
+          ],
+          "file": "icons/graphisme/flyer.svg",
+          "category": "graphisme",
+          "author": "classe ID451",
+          "description": ""
+        },
+        {
+          "id": "graisses",
+          "name": "Graisses",
+          "keywords": [
+            "graisses",
+            "graphisme"
+          ],
+          "file": "icons/graphisme/graisses.svg",
+          "category": "graphisme",
+          "author": "classe ID451",
+          "description": ""
+        },
+        {
+          "id": "illustration-plein",
+          "name": "Illustration plein",
+          "keywords": [
+            "illustration",
+            "plein",
+            "graphisme"
+          ],
+          "file": "icons/graphisme/illustration-plein.svg",
+          "category": "graphisme",
+          "author": "classe ID451",
+          "description": ""
+        },
+        {
+          "id": "illustration-vide",
+          "name": "Illustration vide",
+          "keywords": [
+            "illustration",
+            "vide",
+            "graphisme"
+          ],
+          "file": "icons/graphisme/illustration-vide.svg",
+          "category": "graphisme",
+          "author": "classe ID451",
+          "description": ""
+        },
+        {
+          "id": "italics",
+          "name": "Italiques",
+          "keywords": [
+            "italics",
+            "graphisme"
+          ],
+          "file": "icons/graphisme/italics.svg",
+          "category": "graphisme",
+          "author": "classe ID451",
+          "description": ""
+        },
+        {
+          "id": "journal",
+          "name": "Journal",
+          "keywords": [
+            "journal",
+            "graphisme"
+          ],
+          "file": "icons/graphisme/journal.svg",
+          "category": "graphisme",
+          "author": "classe ID451",
+          "description": ""
+        },
+        {
+          "id": "livre-plein",
+          "name": "Livre plein",
+          "keywords": [
+            "livre",
+            "plein",
+            "graphisme"
+          ],
+          "file": "icons/graphisme/livre-plein.svg",
+          "category": "graphisme",
+          "author": "classe ID451",
+          "description": ""
+        },
+        {
+          "id": "livre-vide",
+          "name": "Livre vide",
+          "keywords": [
+            "livre",
+            "vide",
+            "graphisme"
+          ],
+          "file": "icons/graphisme/livre-vide.svg",
+          "category": "graphisme",
+          "author": "classe ID451",
+          "description": ""
+        },
+        {
+          "id": "logo-1",
+          "name": "Logo 1",
+          "keywords": [
+            "logo",
+            "graphisme"
+          ],
+          "file": "icons/graphisme/logo-1.svg",
+          "category": "graphisme",
+          "author": "classe ID451",
+          "description": ""
+        },
+        {
+          "id": "logo-2",
+          "name": "Logo 2",
+          "keywords": [
+            "logo",
+            "graphisme"
+          ],
+          "file": "icons/graphisme/logo-2.svg",
+          "category": "graphisme",
+          "author": "classe ID451",
+          "description": ""
+        },
+        {
+          "id": "logo-3",
+          "name": "Logo 3",
+          "keywords": [
+            "logo",
+            "graphisme"
+          ],
+          "file": "icons/graphisme/logo-3.svg",
+          "category": "graphisme",
+          "author": "classe ID451",
+          "description": ""
+        },
+        {
+          "id": "maj-minuscule",
+          "name": "Maj minuscule",
+          "keywords": [
+            "maj",
+            "minuscule",
+            "graphisme"
+          ],
+          "file": "icons/graphisme/maj-minuscule.svg",
+          "category": "graphisme",
+          "author": "classe ID451",
+          "description": ""
+        },
+        {
+          "id": "mise-en-page-1",
+          "name": "Mise en page 1",
+          "keywords": [
+            "mise",
+            "page",
+            "graphisme"
+          ],
+          "file": "icons/graphisme/mise-en-page-1.svg",
+          "category": "graphisme",
+          "author": "classe ID451",
+          "description": ""
+        },
+        {
+          "id": "mise-en-page-2",
+          "name": "Mise en page 2",
+          "keywords": [
+            "mise",
+            "page",
+            "graphisme"
+          ],
+          "file": "icons/graphisme/mise-en-page-2.svg",
+          "category": "graphisme",
+          "author": "classe ID451",
+          "description": ""
+        },
+        {
+          "id": "mise-en-page-3",
+          "name": "Mise en page 3",
+          "keywords": [
+            "mise",
+            "page",
+            "graphisme"
+          ],
+          "file": "icons/graphisme/mise-en-page-3.svg",
+          "category": "graphisme",
+          "author": "classe ID451",
+          "description": ""
+        },
+        {
+          "id": "presentation-plein",
+          "name": "Présentation plein",
+          "keywords": [
+            "presentation",
+            "plein",
+            "graphisme"
+          ],
+          "file": "icons/graphisme/presentation-plein.svg",
+          "category": "graphisme",
+          "author": "classe ID451",
+          "description": ""
+        },
+        {
+          "id": "presentation-vide",
+          "name": "Présentation vide",
+          "keywords": [
+            "presentation",
+            "vide",
+            "graphisme"
+          ],
+          "file": "icons/graphisme/presentation-vide.svg",
+          "category": "graphisme",
+          "author": "classe ID451",
+          "description": ""
+        },
+        {
+          "id": "sans-serif",
+          "name": "Sans serif",
+          "keywords": [
+            "sans",
+            "serif",
+            "graphisme"
+          ],
+          "file": "icons/graphisme/sans-serif.svg",
+          "category": "graphisme",
+          "author": "classe ID451",
+          "description": ""
+        },
+        {
+          "id": "serif",
+          "name": "Serif",
+          "keywords": [
+            "serif",
+            "graphisme"
+          ],
+          "file": "icons/graphisme/serif.svg",
+          "category": "graphisme",
+          "author": "classe ID451",
+          "description": ""
+        },
+        {
+          "id": "signaletique",
+          "name": "Signalétique",
+          "keywords": [
+            "signaletique",
+            "graphisme"
+          ],
+          "file": "icons/graphisme/signaletique.svg",
+          "category": "graphisme",
+          "author": "classe ID451",
+          "description": ""
+        },
+        {
+          "id": "typographie",
+          "name": "Typographie",
+          "keywords": [
+            "typographie",
+            "graphisme"
+          ],
+          "file": "icons/graphisme/typographie.svg",
+          "category": "graphisme",
+          "author": "classe ID451",
+          "description": ""
+        },
+        {
+          "id": "underline",
+          "name": "Underline",
+          "keywords": [
+            "underline",
+            "graphisme"
+          ],
+          "file": "icons/graphisme/underline.svg",
+          "category": "graphisme",
+          "author": "classe ID451",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "id": "photo",
+      "label": "Photo",
+      "icons": [
+        {
+          "id": "appareil-photo-blanc",
+          "name": "Appareil photo blanc",
+          "keywords": [
+            "appareil",
+            "photo",
+            "blanc"
+          ],
+          "file": "icons/photo/appareil-photo-blanc.svg",
+          "category": "photo",
+          "author": "classe ID451",
+          "description": ""
+        },
+        {
+          "id": "appareil-photo-noir",
+          "name": "Appareil photo noir",
+          "keywords": [
+            "appareil",
+            "photo",
+            "noir"
+          ],
+          "file": "icons/photo/appareil-photo-noir.svg",
+          "category": "photo",
+          "author": "classe ID451",
+          "description": ""
+        },
+        {
+          "id": "carte-sd-blanc",
+          "name": "Carte sd blanc",
+          "keywords": [
+            "carte",
+            "sd",
+            "blanc"
+          ],
+          "file": "icons/photo/carte-sd-blanc.svg",
+          "category": "photo",
+          "author": "classe ID451",
+          "description": ""
+        },
+        {
+          "id": "carte-sd-noir",
+          "name": "Carte SD noir",
+          "keywords": [
+            "carte SD",
+            "noir"
+          ],
+          "file": "icons/photo/carte-sd-noir.svg",
+          "category": "photo",
+          "author": "classe ID451",
+          "description": ""
+        },
+        {
+          "id": "flash-blanc",
+          "name": "Flash blanc",
+          "keywords": [
+            "flash",
+            "blanc"
+          ],
+          "file": "icons/photo/flash-blanc.svg",
+          "category": "photo",
+          "author": "classe ID451",
+          "description": ""
+        },
+        {
+          "id": "flash-noir",
+          "name": "Flash noir",
+          "keywords": [
+            "flash",
+            "noir"
+          ],
+          "file": "icons/photo/flash-noir.svg",
+          "category": "photo",
+          "author": "classe ID451",
+          "description": ""
+        },
+        {
+          "id": "galerie-blanc",
+          "name": "Galerie blanc",
+          "keywords": [
+            "galerie",
+            "blanc"
+          ],
+          "file": "icons/photo/galerie-blanc.svg",
+          "category": "photo",
+          "author": "classe ID451",
+          "description": ""
+        },
+        {
+          "id": "galerie-noir",
+          "name": "Galerie noir",
+          "keywords": [
+            "galerie",
+            "noir"
+          ],
+          "file": "icons/photo/galerie-noir.svg",
+          "category": "photo",
+          "author": "classe ID451",
+          "description": ""
+        },
+        {
+          "id": "objectif-blanc",
+          "name": "Objectif blanc",
+          "keywords": [
+            "objectif",
+            "blanc"
+          ],
+          "file": "icons/photo/objectif-blanc.svg",
+          "category": "photo",
+          "author": "classe ID451",
+          "description": ""
+        },
+        {
+          "id": "objectif-noir",
+          "name": "Objectif noir",
+          "keywords": [
+            "objectif",
+            "noir"
+          ],
+          "file": "icons/photo/objectif-noir.svg",
+          "category": "photo",
+          "author": "classe ID451",
+          "description": ""
+        },
+        {
+          "id": "studio-photo-blanc",
+          "name": "Studio photo blanc",
+          "keywords": [
+            "studio",
+            "photo",
+            "blanc"
+          ],
+          "file": "icons/photo/studio-photo-blanc.svg",
+          "category": "photo",
+          "author": "classe ID451",
+          "description": ""
+        },
+        {
+          "id": "studio-photo-noir",
+          "name": "Studio photo noir",
+          "keywords": [
+            "studio",
+            "photo",
+            "noir"
+          ],
+          "file": "icons/photo/studio-photo-noir.svg",
+          "category": "photo",
+          "author": "classe ID451",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "id": "web",
+      "label": "Web",
+      "icons": [
+        {
+          "id": "avatar",
+          "name": "Avatar",
+          "keywords": [
+            "avatar",
+            "web"
+          ],
+          "file": "icons/web/avatar.svg",
+          "category": "web",
+          "author": "classe ID451",
+          "description": ""
+        },
+        {
+          "id": "bookmark",
+          "name": "Bookmark",
+          "keywords": [
+            "bookmark",
+            "web"
+          ],
+          "file": "icons/web/bookmark.svg",
+          "category": "web",
+          "author": "classe ID451",
+          "description": ""
+        },
+        {
+          "id": "click",
+          "name": "Click",
+          "keywords": [
+            "click",
+            "web"
+          ],
+          "file": "icons/web/click.svg",
+          "category": "web",
+          "author": "classe ID451",
+          "description": ""
+        },
+        {
+          "id": "enveloppe",
+          "name": "Enveloppe",
+          "keywords": [
+            "enveloppe",
+            "web"
+          ],
+          "file": "icons/web/enveloppe.svg",
+          "category": "web",
+          "author": "classe ID451",
+          "description": ""
+        },
+        {
+          "id": "loading",
+          "name": "Loading",
+          "keywords": [
+            "loading",
+            "web"
+          ],
+          "file": "icons/web/loading.svg",
+          "category": "web",
+          "author": "classe ID451",
+          "description": ""
+        },
+        {
+          "id": "securite",
+          "name": "Securite",
+          "keywords": [
+            "securite",
+            "web"
+          ],
+          "file": "icons/web/securite.svg",
+          "category": "web",
+          "author": "classe ID451",
+          "description": ""
+        },
+        {
+          "id": "telephone",
+          "name": "Téléphone",
+          "keywords": [
+            "telephone",
+            "téléphone",
+            "web"
+          ],
+          "file": "icons/web/telephone.svg",
+          "category": "web",
+          "author": "classe ID451",
+          "description": ""
+        },
+        {
+          "id": "web",
+          "name": "Web",
+          "keywords": [
+            "web",
+            "internet"
+          ],
+          "file": "icons/web/web.svg",
+          "category": "web",
+          "author": "classe ID451",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "id": "game-design",
+      "label": "Game design",
+      "icons": [
+        {
+          "id": "3d",
+          "name": "3d",
+          "keywords": [
+            "3d",
+            "game-design"
+          ],
+          "file": "icons/game-design/3d.svg",
+          "category": "game-design",
+          "author": "classe ID451",
+          "description": ""
+        },
+        {
+          "id": "arrow",
+          "name": "Arrow",
+          "keywords": [
+            "arrow",
+            "game-design"
+          ],
+          "file": "icons/game-design/arrow.svg",
+          "category": "game-design",
+          "author": "classe ID451",
+          "description": ""
+        },
+        {
+          "id": "arrows",
+          "name": "Arrows",
+          "keywords": [
+            "arrows",
+            "game-design"
+          ],
+          "file": "icons/game-design/arrows.svg",
+          "category": "game-design",
+          "author": "classe ID451",
+          "description": ""
+        },
+        {
+          "id": "buttons",
+          "name": "Buttons",
+          "keywords": [
+            "buttons",
+            "game-design"
+          ],
+          "file": "icons/game-design/buttons.svg",
+          "category": "game-design",
+          "author": "classe ID451",
+          "description": ""
+        },
+        {
+          "id": "controller",
+          "name": "Controller",
+          "keywords": [
+            "controller",
+            "game-design"
+          ],
+          "file": "icons/game-design/controller.svg",
+          "category": "game-design",
+          "author": "classe ID451",
+          "description": ""
+        },
+        {
+          "id": "cube",
+          "name": "Cube",
+          "keywords": [
+            "cube",
+            "game-design"
+          ],
+          "file": "icons/game-design/cube.svg",
+          "category": "game-design",
+          "author": "classe ID451",
+          "description": ""
+        },
+        {
+          "id": "ghost",
+          "name": "Ghost",
+          "keywords": [
+            "ghost",
+            "game-design"
+          ],
+          "file": "icons/game-design/ghost.svg",
+          "category": "game-design",
+          "author": "classe ID451",
+          "description": ""
+        },
+        {
+          "id": "imd",
+          "name": "Imd",
+          "keywords": [
+            "imd",
+            "game-design"
+          ],
+          "file": "icons/game-design/imd.svg",
+          "category": "game-design",
+          "author": "classe ID451",
+          "description": ""
+        },
+        {
+          "id": "joysrtick",
+          "name": "Joysrtick",
+          "keywords": [
+            "joysrtick",
+            "game-design"
+          ],
+          "file": "icons/game-design/joysrtick.svg",
+          "category": "game-design",
+          "author": "classe ID451",
+          "description": ""
+        },
+        {
+          "id": "pacman",
+          "name": "Pacman",
+          "keywords": [
+            "pacman",
+            "game-design"
+          ],
+          "file": "icons/game-design/pacman.svg",
+          "category": "game-design",
+          "author": "classe ID451",
+          "description": ""
+        },
+        {
+          "id": "point",
+          "name": "Point",
+          "keywords": [
+            "point",
+            "game-design"
+          ],
+          "file": "icons/game-design/point.svg",
+          "category": "game-design",
+          "author": "classe ID451",
+          "description": ""
+        },
+        {
+          "id": "ps",
+          "name": "Ps",
+          "keywords": [
+            "ps",
+            "game-design"
+          ],
+          "file": "icons/game-design/ps.svg",
+          "category": "game-design",
+          "author": "classe ID451",
+          "description": ""
+        },
+        {
+          "id": "ps4",
+          "name": "Ps4",
+          "keywords": [
+            "ps4",
+            "game-design"
+          ],
+          "file": "icons/game-design/ps4.svg",
+          "category": "game-design",
+          "author": "classe ID451",
+          "description": ""
+        },
+        {
+          "id": "waves",
+          "name": "Waves",
+          "keywords": [
+            "waves",
+            "game-design"
+          ],
+          "file": "icons/game-design/waves.svg",
+          "category": "game-design",
+          "author": "classe ID451",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "id": "administration",
+      "label": "Administration",
+      "icons": [
+        {
+          "id": "bureaudirecteur",
+          "name": "Bureaudirecteur",
+          "keywords": [
+            "bureau",
+            "directeur",
+            "administration"
+          ],
+          "file": "icons/administration/bureaudirecteur.svg",
+          "category": "administration",
+          "author": "classe ID451",
+          "description": ""
+        },
+        {
+          "id": "bureaudoyens",
+          "name": "Bureaudoyens",
+          "keywords": [
+            "bureau",
+            "doyens",
+            "administration"
+          ],
+          "file": "icons/administration/bureaudoyens.svg",
+          "category": "administration",
+          "author": "classe ID451",
+          "description": ""
+        },
+        {
+          "id": "rh",
+          "name": "Rh",
+          "keywords": [
+            "rh",
+            "administration"
+          ],
+          "file": "icons/administration/rh.svg",
+          "category": "administration",
+          "author": "classe ID451",
+          "description": ""
+        },
+        {
+          "id": "secreteriat",
+          "name": "Secreteriat",
+          "keywords": [
+            "secreteriat",
+            "administration"
+          ],
+          "file": "icons/administration/secreteriat.svg",
+          "category": "administration",
+          "author": "classe ID451",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "id": "batiment",
+      "label": "Batiment",
+      "icons": [
+        {
+          "id": "ascenseur",
+          "name": "Ascenseur",
+          "keywords": [
+            "ascenseur",
+            "batiment"
+          ],
+          "file": "icons/batiment/ascenseur.svg",
+          "category": "batiment",
+          "author": "classe ID451",
+          "description": ""
+        },
+        {
+          "id": "cafeteria",
+          "name": "Cafeteria",
+          "keywords": [
+            "cafeteria",
+            "batiment"
+          ],
+          "file": "icons/batiment/cafeteria.svg",
+          "category": "batiment",
+          "author": "classe ID451",
+          "description": ""
+        },
+        {
+          "id": "cafeteria2",
+          "name": "Cafeteria 2",
+          "keywords": [
+            "cafeteria",
+            "batiment"
+          ],
+          "file": "icons/batiment/cafeteria2.svg",
+          "category": "batiment",
+          "author": "classe ID451",
+          "description": ""
+        },
+        {
+          "id": "infirmerie",
+          "name": "Infirmerie",
+          "keywords": [
+            "infirmerie",
+            "batiment"
+          ],
+          "file": "icons/batiment/infirmerie.svg",
+          "category": "batiment",
+          "author": "classe ID451",
+          "description": ""
+        },
+        {
+          "id": "salle-des-profs",
+          "name": "Salle des profs",
+          "keywords": [
+            "salle",
+            "profs",
+            "batiment"
+          ],
+          "file": "icons/batiment/salle-des-profs.svg",
+          "category": "batiment",
+          "author": "classe ID451",
+          "description": ""
+        },
+        {
+          "id": "salle-reunion",
+          "name": "Salle Réunion",
+          "keywords": [
+            "salle",
+            "reunion",
+            "batiment"
+          ],
+          "file": "icons/batiment/salle-reunion.svg",
+          "category": "batiment",
+          "author": "classe ID451",
+          "description": ""
+        },
+        {
+          "id": "toilettes",
+          "name": "Toilettes",
+          "keywords": [
+            "toilettes",
+            "batiment"
+          ],
+          "file": "icons/batiment/toilettes.svg",
+          "category": "batiment",
+          "author": "classe ID451",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "id": "services",
+      "label": "Services",
+      "icons": [
+        {
+          "id": "economat-1",
+          "name": "Economat 1",
+          "keywords": [
+            "economat",
+            "services"
+          ],
+          "file": "icons/services/economat-1.svg",
+          "category": "services",
+          "author": "classe ID451",
+          "description": ""
+        },
+        {
+          "id": "economat-2",
+          "name": "Economat 2",
+          "keywords": [
+            "economat",
+            "services"
+          ],
+          "file": "icons/services/economat-2.svg",
+          "category": "services",
+          "author": "classe ID451",
+          "description": ""
+        },
+        {
+          "id": "helpdesk-1-blanc",
+          "name": "Helpdesk 1 blanc",
+          "keywords": [
+            "helpdesk",
+            "blanc",
+            "services"
+          ],
+          "file": "icons/services/helpdesk-1-blanc.svg",
+          "category": "services",
+          "author": "classe ID451",
+          "description": ""
+        },
+        {
+          "id": "helpdesk-1-noir",
+          "name": "Helpdesk 1 noir",
+          "keywords": [
+            "helpdesk",
+            "noir",
+            "services"
+          ],
+          "file": "icons/services/helpdesk-1-noir.svg",
+          "category": "services",
+          "author": "classe ID451",
+          "description": ""
+        },
+        {
+          "id": "helpdesk-2-blanc",
+          "name": "Helpdesk 2 blanc",
+          "keywords": [
+            "helpdesk",
+            "blanc",
+            "services"
+          ],
+          "file": "icons/services/helpdesk-2-blanc.svg",
+          "category": "services",
+          "author": "classe ID451",
+          "description": ""
+        },
+        {
+          "id": "helpdesk-2-noir",
+          "name": "Helpdesk 2 noir",
+          "keywords": [
+            "helpdesk",
+            "noir",
+            "services"
+          ],
+          "file": "icons/services/helpdesk-2-noir.svg",
+          "category": "services",
+          "author": "classe ID451",
+          "description": ""
+        },
+        {
+          "id": "pret-materiel-1-blanc",
+          "name": "Pret materiel 1 blanc",
+          "keywords": [
+            "pret",
+            "materiel",
+            "blanc",
+            "services"
+          ],
+          "file": "icons/services/pret-materiel-1-blanc.svg",
+          "category": "services",
+          "author": "classe ID451",
+          "description": ""
+        },
+        {
+          "id": "pret-materiel-1-noir",
+          "name": "Pret materiel 1 noir",
+          "keywords": [
+            "pret",
+            "materiel",
+            "noir",
+            "services"
+          ],
+          "file": "icons/services/pret-materiel-1-noir.svg",
+          "category": "services",
+          "author": "classe ID451",
+          "description": ""
+        },
+        {
+          "id": "pret-materiel-2-blanc",
+          "name": "Pret materiel 2 blanc",
+          "keywords": [
+            "pret",
+            "materiel",
+            "blanc",
+            "services"
+          ],
+          "file": "icons/services/pret-materiel-2-blanc.svg",
+          "category": "services",
+          "author": "classe ID451",
+          "description": ""
+        },
+        {
+          "id": "pret-materiel-2-noir",
+          "name": "Pret materiel 2 noir",
+          "keywords": [
+            "pret",
+            "materiel",
+            "noir",
+            "services"
+          ],
+          "file": "icons/services/pret-materiel-2-noir.svg",
+          "category": "services",
+          "author": "classe ID451",
+          "description": ""
+        },
+        {
+          "id": "salle-impression-1",
+          "name": "Salle impression 1",
+          "keywords": [
+            "salle",
+            "impression",
+            "services"
+          ],
+          "file": "icons/services/salle-impression-1.svg",
+          "category": "services",
+          "author": "classe ID451",
+          "description": ""
+        },
+        {
+          "id": "salle-impression-2",
+          "name": "Salle impression 2",
+          "keywords": [
+            "salle",
+            "impression",
+            "services"
+          ],
+          "file": "icons/services/salle-impression-2.svg",
+          "category": "services",
+          "author": "classe ID451",
+          "description": ""
         }
       ]
     }
