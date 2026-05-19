@@ -94,10 +94,7 @@
 ---
 
 ## Notes importantes
-- La grille fait 6 colonnes en desktop, 2 en mobile
-- Les cartes ont un border-radius de 8px et une ombre portée légère
-- La sidebar catégories est fixe en desktop, devient un menu déroulant en mobile
-- 
+- La grille fait 6 colonnes en desktop, 3 en mobile
 ---
 
 ## Ce que le LLM ne doit PAS inventer

@@ -17,7 +17,7 @@ designers qui veulent trouver et copier rapidement une icône.
 ## F1 — Affichage de la galerie
 
 ### Description
-Page principale affichant toutes les icônes sous forme de grille.
+Page principale affichant une selesciton d'icônes (6 par catégorie) sous forme de grille en fonction des catégories.
 
 ### Comportement
 - Au chargement, fetch de `icons.json` → affichage de toutes les icônes
@@ -25,7 +25,6 @@ Page principale affichant toutes les icônes sous forme de grille.
 - Chaque carte icône affiche :
   - L'icône SVG (via `<img>`)
   - Le nom de l'icône en dessous
-- Un compteur indique le nombre d'icônes affichées (ex : "87 icônes")
 
 ### Cas limites
 - Si `icons.json` ne se charge pas → message d'erreur lisible, pas de page blanche
@@ -33,22 +32,6 @@ Page principale affichant toutes les icônes sous forme de grille.
 
 ---
 
-## F2 — Navigation par catégorie
-
-### Description
-Filtrer les icônes par catégorie via un menu latéral ou une barre d'onglets.
-
-### Comportement
-- Liste des catégories générée dynamiquement depuis `icons.json`
-- Une option "Toutes" affiche l'ensemble de la collection
-- La catégorie active est visuellement distinguée
-- Filtrage instantané, sans rechargement de page
-- Le filtre catégorie et la recherche (F3) sont cumulables
-
-### Cas limites
-- Catégorie vide → ne pas l'afficher (ou l'afficher grisée)
-
----
 
 ## F3 — Recherche par mot-clé
 
@@ -74,6 +57,12 @@ Barre de recherche filtrante sur le nom et les mots-clés des icônes.
 ### Description
 En cliquant sur une icône, une modal (ou panneau) s'ouvre avec les détails et actions.
 
+### Dimentions
+La modal est affiché 
+- sur la moitié de la page en desktop dans la largeur
+- prend toute la page en mobile dans la largeur
+
+
 ### Comportement
 La modal affiche :
 - L'icône en grand (ex : 200×200px)
@@ -85,32 +74,13 @@ La modal affiche :
 
 ### Fermeture de la modal
 - Clic sur le bouton ✕
-- Clic sur l'arrière-plan (overlay)
 - Touche Échap
 
 ### Feedback utilisateur
 - Après "Copier le SVG" : le bouton affiche "✓ Copié !" pendant 2 secondes
-- Si la copie échoue (API non disponible) : afficher le code dans une zone de texte sélectionnable
 
 ### Cas limites
 - Si le fetch du SVG échoue → message d'erreur dans la modal, pas de crash
-
----
-
-## Critères de qualité
-
-### Performance
-- Chargement initial < 1s (réseau local ou CDN rapide)
-- Aucun layout shift visible au chargement des icônes
-
-### Accessibilité
-- Navigation clavier complète (Tab, Entrée, Échap)
-- Attributs `aria-label` sur les icônes et boutons sans texte visible
-- Contraste suffisant (WCAG AA)
-
-### Compatibilité
-- Navigateurs modernes : Chrome, Firefox, Safari, Edge (dernières versions)
-- Pas de support IE requis
 
 ---
 
