@@ -37,3 +37,14 @@ Résultat :
 - supprime 24x24
 - remplacer plusieurs `---` consécutifs par un seul `-`
 - évite les noms de fichiers se terminant par `-.svg`
+
+##  [Unreleased] - 2026-05-19
+
+Tentative durant le cours, avec Copilot Free. L'agent pose des questions, progresse... mais le résultat ne donne rien de concluant.
+
+Dans l'après-midi, dans la branche ms-copilot: séance de travail avec Copilot Pro (en mode auto, il choisit le modèle GPT-5.3-Codex).
+
+Le résultat est concluant, l'IA produit la fonctionnalité de base du site : 
+- vue initiale
+- fonction de recherche
+- vue par catégorie
