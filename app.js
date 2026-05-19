@@ -21,6 +21,8 @@ const iconGallery = () => ({
   debouncedSearchQuery: "",
   searchDebounceTimer: null,
   brokenIconIds: new Set(),
+  viewMode: "home",
+  activeCategoryId: "",
   isDetailOpen: false,
   selectedIcon: null,
   rawSvgContent: "",
@@ -73,6 +75,10 @@ const iconGallery = () => ({
     return this.debouncedSearchQuery.length > 0;
   },
 
+  get isCategoryView() {
+    return this.viewMode === "category";
+  },
+
   allIcons() {
     return this.categories.flatMap((category) => {
       const categoryIcons = Array.isArray(category.icons) ? category.icons : [];
@@ -98,6 +104,49 @@ const iconGallery = () => ({
         limitedIcons,
       };
     });
+  },
+
+  currentCategory() {
+    if (!this.activeCategoryId) {
+      return null;
+    }
+
+    return this.categories.find((category) => category.id === this.activeCategoryId) || null;
+  },
+
+  currentCategoryLabel() {
+    const category = this.currentCategory();
+    return category ? category.label : "";
+  },
+
+  categoryIcons() {
+    const category = this.currentCategory();
+
+    if (!category || !Array.isArray(category.icons)) {
+      return [];
+    }
+
+    return category.icons.filter((icon) => !this.brokenIconIds.has(icon.id));
+  },
+
+  handleCategorySelect(categoryId) {
+    if (!categoryId) {
+      this.goHomeView();
+      return;
+    }
+
+    this.goToCategory(categoryId);
+  },
+
+  goToCategory(categoryId) {
+    this.clearSearch();
+    this.activeCategoryId = categoryId;
+    this.viewMode = "category";
+  },
+
+  goHomeView() {
+    this.viewMode = "home";
+    this.activeCategoryId = "";
   },
 
   searchResults() {

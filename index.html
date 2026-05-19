@@ -25,7 +25,32 @@
       </section>
 
       <header class="site-header" x-show="!hasLoadError">
-        <h1 class="site-title">Icon Library</h1>
+        <h1
+          class="site-title"
+          role="button"
+          tabindex="0"
+          aria-label="Retour a l'accueil"
+          @click="goHomeView()"
+          @keydown.enter.prevent="goHomeView()"
+          @keydown.space.prevent="goHomeView()"
+        >
+          Icon Library
+        </h1>
+
+        <div class="header-category-nav">
+          <label for="category-select">Toutes les categories</label>
+          <select
+            id="category-select"
+            name="category-select"
+            x-model="activeCategoryId"
+            @change="handleCategorySelect($event.target.value)"
+          >
+            <option value="">Choisir une categorie</option>
+            <template x-for="category in categories" :key="`nav-${category.id}`">
+              <option :value="category.id" x-text="category.label"></option>
+            </template>
+          </select>
+        </div>
 
         <form class="search-form" role="search" @submit.prevent>
           <label for="icon-search">Rechercher une icone</label>
@@ -55,7 +80,11 @@
           <p>Chargement des icones...</p>
         </section>
 
-        <section class="categories-view" aria-label="Categories d'icones" x-show="!hasActiveSearch && !isLoading">
+        <section
+          class="categories-view"
+          aria-label="Categories d'icones"
+          x-show="!isCategoryView && !hasActiveSearch && !isLoading"
+        >
           <template x-for="category in displayedCategories()" :key="category.id">
             <section class="category-section" :aria-label="category.label">
               <h2 class="category-title" x-text="category.label"></h2>
@@ -83,11 +112,17 @@
               </div>
 
               <p class="category-empty" x-show="category.limitedIcons.length === 0">Aucune icone disponible</p>
+
+              <button type="button" class="category-more" @click="goToCategory(category.id)">Voir plus</button>
             </section>
           </template>
         </section>
 
-        <section class="search-results-view" aria-live="polite" x-show="hasActiveSearch && !isLoading">
+        <section
+          class="search-results-view"
+          aria-live="polite"
+          x-show="hasActiveSearch && !isLoading"
+        >
           <div class="icon-grid" x-show="searchResults().length > 0">
             <template x-for="icon in searchResults()" :key="icon.id">
               <article class="icon-card-wrapper">
@@ -114,6 +149,42 @@
           <p class="search-empty" x-show="searchResults().length === 0">
             Aucune icone trouvee pour "<span x-text="debouncedSearchQuery"></span>"
           </p>
+        </section>
+
+        <section class="category-full-view" x-show="isCategoryView && !hasActiveSearch && !isLoading" aria-live="polite">
+          <div class="category-full-header">
+            <button type="button" class="back-home" @click="goHomeView()">Retour a l'accueil</button>
+            <h2 class="category-title" x-show="currentCategory()" x-text="currentCategoryLabel()"></h2>
+          </div>
+
+          <div class="icon-grid" x-show="currentCategory() && categoryIcons().length > 0">
+            <template x-for="icon in categoryIcons()" :key="`full-${icon.id}`">
+              <article class="icon-card-wrapper">
+                <button
+                  type="button"
+                  class="icon-card"
+                  :aria-label="`Voir les details de ${icon.name}`"
+                  @click="openDetail(icon, currentCategoryLabel(), $event)"
+                >
+                  <img
+                    class="icon-image"
+                    :src="icon.file"
+                    :alt="icon.name"
+                    loading="lazy"
+                    @error="markIconAsBroken(icon.id)"
+                  />
+                  <span class="icon-name" x-text="icon.name"></span>
+                </button>
+              </article>
+            </template>
+          </div>
+
+          <p class="category-empty" x-show="currentCategory() && categoryIcons().length === 0">Aucune icone disponible</p>
+
+          <div class="category-not-found" x-show="!currentCategory()">
+            <p>Categorie introuvable</p>
+            <button type="button" class="back-home" @click="goHomeView()">Retour a l'accueil</button>
+          </div>
         </section>
       </main>
 
