@@ -18,8 +18,13 @@
     <script defer src="app.js"></script>
   </head>
   <body>
-    <div class="app" x-data="iconGallery()">
-      <header class="site-header">
+    <div class="app" x-data="iconGallery()" x-init="init()">
+      <section class="screen-error" aria-live="polite" x-show="hasLoadError">
+        <h2>Impossible de charger la bibliotheque d'icones.</h2>
+        <p>Rafraichis la page ou verifie que icons.json est accessible.</p>
+      </section>
+
+      <header class="site-header" x-show="!hasLoadError">
         <h1 class="site-title">Icon Library</h1>
 
         <form class="search-form" role="search" @submit.prevent>
@@ -31,24 +36,52 @@
               type="search"
               placeholder="Nom, mot-cle..."
               autocomplete="off"
+              x-model="searchQuery"
             />
-            <button type="button" aria-label="Effacer la recherche">×</button>
+            <button type="button" aria-label="Effacer la recherche" @click="clearSearch()">x</button>
           </div>
         </form>
       </header>
 
-      <main class="content" id="main-content">
-        <section class="screen-error" aria-live="polite" hidden>
-          <h2>Impossible de charger la bibliotheque d'icones.</h2>
-          <p>Rafraichis la page ou verifie que icons.json est accessible.</p>
+      <main class="content" id="main-content" x-show="!hasLoadError">
+        <section class="loading-state" x-show="isLoading" aria-live="polite">
+          <p>Chargement des icones...</p>
         </section>
 
-        <section class="categories-view" aria-label="Categories d'icones">
-          <!-- Les categories et cartes icones seront rendues ici -->
+        <section class="categories-view" aria-label="Categories d'icones" x-show="!hasActiveSearch && !isLoading">
+          <template x-for="category in displayedCategories()" :key="category.id">
+            <section class="category-section" :aria-label="category.label">
+              <h2 class="category-title" x-text="category.label"></h2>
+
+              <div class="icon-grid" x-show="category.limitedIcons.length > 0">
+                <template x-for="icon in category.limitedIcons" :key="icon.id">
+                  <article class="icon-card-wrapper">
+                    <button
+                      type="button"
+                      class="icon-card"
+                      :aria-label="`Voir les details de ${icon.name}`"
+                      @click="openDetail(icon)"
+                    >
+                      <img
+                        class="icon-image"
+                        :src="icon.file"
+                        :alt="icon.name"
+                        loading="lazy"
+                        @error="markIconAsBroken(icon.id)"
+                      />
+                      <span class="icon-name" x-text="icon.name"></span>
+                    </button>
+                  </article>
+                </template>
+              </div>
+
+              <p class="category-empty" x-show="category.limitedIcons.length === 0">Aucune icone disponible</p>
+            </section>
+          </template>
         </section>
 
-        <section class="search-results-view" aria-live="polite" hidden>
-          <!-- La grille globale de recherche sera rendue ici -->
+        <section class="search-results-view" aria-live="polite" x-show="hasActiveSearch && !isLoading">
+          <p class="search-pending">La recherche globale sera branchee a l'etape suivante.</p>
         </section>
       </main>
 

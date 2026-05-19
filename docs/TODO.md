@@ -2,22 +2,22 @@
 
 ## Setup
 - [x] Creer index.html avec structure principale et imports CDN
-- [ ] Creer style.css avec variables design system
+- [x] Creer style.css avec variables design system
 - [x] Creer app.js avec composant Alpine racine
 
 ## Galerie (mode normal)
-- [ ] Charger icons.json au demarrage
-- [ ] Afficher toutes les categories dans l'ordre du JSON
-- [ ] Limiter a 6 icones max par categorie
-- [ ] Afficher nom + image par carte
+- [x] Charger icons.json au demarrage
+- [x] Afficher toutes les categories dans l'ordre du JSON
+- [x] Limiter a 6 icones max par categorie
+- [x] Afficher nom + image par carte
 
 ## Gestion erreurs
-- [ ] Afficher un ecran d'erreur plein page si icons.json ne charge pas
-- [ ] Masquer une carte si son SVG est introuvable
-- [ ] Afficher "Aucune icone disponible" si categorie vide apres masquage
+- [x] Afficher un ecran d'erreur plein page si icons.json ne charge pas
+- [x] Masquer une carte si son SVG est introuvable
+- [x] Afficher "Aucune icone disponible" si categorie vide apres masquage
 
 ## Recherche
-- [ ] Ajouter un champ de recherche avec label associe
+- [x] Ajouter un champ de recherche avec label associe
 - [ ] Ajouter debounce 300 ms
 - [ ] Filtrer sur name + keywords
 - [ ] Rendre la recherche insensible a la casse et aux accents
@@ -43,8 +43,8 @@
 - [ ] Fournir un lien download direct vers le fichier SVG
 
 ## Accessibilite
-- [ ] Ajouter alt/aria-label sur chaque visuel
-- [ ] Assurer focus visible sur tous les elements interactifs
+- [x] Ajouter alt/aria-label sur chaque visuel
+- [x] Assurer focus visible sur tous les elements interactifs
 - [ ] Fermer la modal avec Echap
 - [ ] Implementer un focus trap complet dans la modal
 
