@@ -11,21 +11,20 @@
 
 | Fichier | Contenu |
 |---------|---------|
-| `mockups/desktop-gallery.png` | Page principale — grille d'icônes, sidebar catégories, barre de recherche |
-| `mockups/mobile-gallery.png` | Page principale en vue mobile |
-| `mockups/desktop-modal.png` | Modal de détail d'une icône (ouverte) |
-| `mockups/mobile-modal.png` | Modal en vue mobile |
-| `mockups/states-hover-focus.png` | États interactifs : hover sur carte, focus clavier, bouton copié |
+| `mockups/mobile-accueil.png` | Page principale en vue mobile |
+| `mockups/mobile-modal.png` | Modal de détail d'une icône (ouverte) en vue mobile |
+| `mockups/mobile-icon-list.png` | Quand on est dans une catégorie, page avec toutes les icones de cette catégorie |
+| `mockups/mobile-licence-page.png` | Page avec les informations de la licence |
 
 ### Maquette desktop
 
 | Fichier | Contenu |
 |---------|---------|
-| `mockups/desktop-gallery.png` | Page principale — grille d'icônes, sidebar catégories, barre de recherche |
-| `mockups/mobile-gallery.png` | Page principale en vue mobile |
-| `mockups/desktop-modal.png` | Modal de détail d'une icône (ouverte) |
-| `mockups/mobile-modal.png` | Modal en vue mobile |
-| `mockups/states-hover-focus.png` | États interactifs : hover sur carte, focus clavier, bouton copié |
+| `mockups/desktop-accueil.png` | Page principale — grille d'icônes |
+| `mockups/desktop-icones.png` | Quand on est dans une catégorie, page avec toutes les icones de cette catégorie |
+| `mockups/desktop-modal.png` | Modal de détail d'une icône (ouverte) en vue desktop |
+| `mockups/desktop-page-about.png` | La page ?À propos |
+| `mockups/desktop-page-licence.png` | Page avec les informations de la licence |
 
 ---
 
