@@ -103,3 +103,46 @@ Si tu veux accelerer ensuite, deux sous-agents peuvent etre utiles:
 - A11y-Check Agent (optionnel)
   - Audit des labels, ordre de tabulation, focus trap, Echap
   - Retour concret des ecarts et correctifs minimaux
+
+## 4. Roadmap V2 (F5)
+
+Objectif V2:
+- Ajouter une vue complete par categorie, accessible depuis deux points d'entree:
+  - lien "Voir plus" sous chaque categorie sur l'accueil
+  - dropdown categories dans le header
+
+Etat actuel:
+- V2 F5 est implemente techniquement.
+- Le comportement est coherent avec la spec:
+  - ouverture de la vue categorie depuis "Voir plus"
+  - ouverture de la vue categorie depuis dropdown
+  - affichage de toutes les icones de la categorie
+  - retour accueil
+  - cas "Categorie introuvable" et "Aucune icone disponible"
+
+Decoupage V2 (trace implementation):
+
+1. Navigation categorie depuis accueil
+- Dependances: V1 complete
+- Sortie: bouton "Voir plus" par section categorie
+
+2. Navigation categorie depuis header
+- Dependances: 1
+- Sortie: dropdown categories synchronise avec la vue active
+
+3. Vue categorie complete
+- Dependances: 1, 2
+- Sortie: grille complete de la categorie active (ordre JSON)
+
+4. Etats et fallback
+- Dependances: 3
+- Sortie: gestion "Categorie introuvable" et categorie vide
+
+5. Validation V2
+- Dependances: 1..4
+- Sortie: parcours "Voir plus", dropdown, retour accueil, modal detail
+
+Pistes V2.1 (optionnel):
+- URL state (hash/query) pour partager directement une categorie
+- Moteur de recherche scope a la categorie active
+- Ajout d'un fil d'Ariane dans la vue categorie
