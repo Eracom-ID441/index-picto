@@ -21,6 +21,14 @@ const iconGallery = () => ({
   debouncedSearchQuery: "",
   searchDebounceTimer: null,
   brokenIconIds: new Set(),
+  isDetailOpen: false,
+  selectedIcon: null,
+  rawSvgContent: "",
+  detailSvgLoadError: "",
+  copyError: "",
+  isCopySuccessVisible: false,
+  copyFeedbackTimer: null,
+  previousFocusedElement: null,
 
   async init() {
     this.setupSearchDebounce();
@@ -126,8 +134,128 @@ const iconGallery = () => ({
     }
   },
 
-  openDetail(icon) {
-    console.log("Detail a implementer", icon);
+  async openDetail(icon, categoryLabel, event) {
+    this.previousFocusedElement = event?.currentTarget || null;
+    this.selectedIcon = {
+      ...icon,
+      categoryLabel: categoryLabel || icon.categoryLabel || "",
+    };
+    this.isDetailOpen = true;
+    this.rawSvgContent = "";
+    this.detailSvgLoadError = "";
+    this.copyError = "";
+    this.isCopySuccessVisible = false;
+
+    await this.loadDetailSvg();
+
+    this.$nextTick(() => {
+      if (this.$refs.detailCloseButton) {
+        this.$refs.detailCloseButton.focus();
+      }
+    });
+  },
+
+  closeDetail() {
+    this.isDetailOpen = false;
+    this.selectedIcon = null;
+    this.rawSvgContent = "";
+    this.detailSvgLoadError = "";
+    this.copyError = "";
+    this.isCopySuccessVisible = false;
+
+    if (this.copyFeedbackTimer) {
+      clearTimeout(this.copyFeedbackTimer);
+      this.copyFeedbackTimer = null;
+    }
+
+    if (this.previousFocusedElement) {
+      this.previousFocusedElement.focus();
+      this.previousFocusedElement = null;
+    }
+  },
+
+  async loadDetailSvg() {
+    if (!this.selectedIcon) {
+      return;
+    }
+
+    try {
+      const response = await fetch(this.selectedIcon.file, { cache: "no-store" });
+
+      if (!response.ok) {
+        throw new Error(`Impossible de charger le SVG (status ${response.status})`);
+      }
+
+      this.rawSvgContent = await response.text();
+      this.detailSvgLoadError = "";
+    } catch (error) {
+      this.rawSvgContent = "";
+      this.detailSvgLoadError = "Impossible de charger le fichier SVG pour cette icone.";
+      console.error(error);
+    }
+  },
+
+  copyButtonLabel() {
+    return this.isCopySuccessVisible ? "✓ Copie !" : "Copier le SVG";
+  },
+
+  async copySvg() {
+    this.copyError = "";
+
+    if (!this.rawSvgContent) {
+      this.copyError = "Copie impossible: le SVG n'est pas disponible.";
+      return;
+    }
+
+    try {
+      await navigator.clipboard.writeText(this.rawSvgContent);
+      this.isCopySuccessVisible = true;
+
+      if (this.copyFeedbackTimer) {
+        clearTimeout(this.copyFeedbackTimer);
+      }
+
+      this.copyFeedbackTimer = setTimeout(() => {
+        this.isCopySuccessVisible = false;
+      }, 2000);
+    } catch (error) {
+      this.copyError = "La copie a echoue sur ce navigateur.";
+      this.isCopySuccessVisible = false;
+      console.error(error);
+    }
+  },
+
+  getModalFocusableElements() {
+    if (!this.$refs.detailModal) {
+      return [];
+    }
+
+    const focusableSelector =
+      'button:not([disabled]), [href], input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])';
+
+    return [...this.$refs.detailModal.querySelectorAll(focusableSelector)].filter(
+      (element) => element.getAttribute("aria-disabled") !== "true"
+    );
+  },
+
+  handleModalTab(event) {
+    const focusables = this.getModalFocusableElements();
+
+    if (focusables.length === 0) {
+      return;
+    }
+
+    const currentIndex = focusables.indexOf(document.activeElement);
+    const movingBackward = event.shiftKey;
+
+    if (movingBackward) {
+      const previousIndex = currentIndex <= 0 ? focusables.length - 1 : currentIndex - 1;
+      focusables[previousIndex].focus();
+      return;
+    }
+
+    const nextIndex = currentIndex === -1 || currentIndex === focusables.length - 1 ? 0 : currentIndex + 1;
+    focusables[nextIndex].focus();
   },
 });
 

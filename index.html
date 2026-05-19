@@ -67,7 +67,7 @@
                       type="button"
                       class="icon-card"
                       :aria-label="`Voir les details de ${icon.name}`"
-                      @click="openDetail(icon)"
+                      @click="openDetail(icon, category.label, $event)"
                     >
                       <img
                         class="icon-image"
@@ -95,7 +95,7 @@
                   type="button"
                   class="icon-card"
                   :aria-label="`Voir les details de ${icon.name}`"
-                  @click="openDetail(icon)"
+                  @click="openDetail(icon, icon.categoryLabel, $event)"
                 >
                   <img
                     class="icon-image"
@@ -117,15 +117,86 @@
         </section>
       </main>
 
-      <aside
-        class="icon-detail-modal"
-        role="dialog"
-        aria-modal="true"
-        aria-labelledby="icon-detail-title"
-        hidden
-      >
-        <!-- Le detail de l'icone sera rendu ici -->
-      </aside>
+      <div class="modal-overlay" x-show="isDetailOpen" @click.self="closeDetail()">
+        <aside
+          class="icon-detail-modal"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="icon-detail-title"
+          x-show="isDetailOpen"
+          x-ref="detailModal"
+          @keydown.escape.prevent.stop="closeDetail()"
+          @keydown.tab.prevent="handleModalTab($event)"
+        >
+          <header class="detail-header">
+            <h2 id="icon-detail-title" class="detail-title" x-text="selectedIcon ? selectedIcon.name : ''"></h2>
+            <button
+              type="button"
+              class="detail-close"
+              aria-label="Fermer la fenetre de detail"
+              x-ref="detailCloseButton"
+              @click="closeDetail()"
+            >
+              x
+            </button>
+          </header>
+
+          <div class="detail-body" x-show="selectedIcon">
+            <div class="detail-preview">
+              <img
+                class="detail-preview-image"
+                :src="selectedIcon ? selectedIcon.file : ''"
+                :alt="selectedIcon ? selectedIcon.name : ''"
+              />
+            </div>
+
+            <p class="detail-meta">
+              <strong>Categorie:</strong>
+              <span x-text="selectedIcon ? selectedIcon.categoryLabel : ''"></span>
+            </p>
+
+            <p class="detail-meta" x-show="selectedIcon && selectedIcon.author">
+              <strong>Auteur:</strong>
+              <span x-text="selectedIcon ? selectedIcon.author : ''"></span>
+            </p>
+
+            <p class="detail-meta" x-show="selectedIcon && selectedIcon.description">
+              <strong>Description:</strong>
+              <span x-text="selectedIcon ? selectedIcon.description : ''"></span>
+            </p>
+
+            <div class="detail-tags" x-show="selectedIcon && selectedIcon.keywords && selectedIcon.keywords.length > 0">
+              <template x-for="keyword in selectedIcon ? selectedIcon.keywords : []" :key="keyword">
+                <span class="detail-tag" x-text="keyword"></span>
+              </template>
+            </div>
+
+            <p class="detail-error" x-show="detailSvgLoadError" x-text="detailSvgLoadError"></p>
+            <p class="detail-error" x-show="copyError" x-text="copyError"></p>
+
+            <div class="detail-actions">
+              <button
+                type="button"
+                class="detail-action"
+                x-ref="copyButton"
+                @click="copySvg()"
+                :disabled="!selectedIcon"
+                x-text="copyButtonLabel()"
+              ></button>
+
+              <a
+                class="detail-action detail-download"
+                :href="selectedIcon ? selectedIcon.file : '#'"
+                :download="selectedIcon ? `${selectedIcon.id}.svg` : null"
+                :aria-disabled="!selectedIcon"
+                @click="if (!selectedIcon) $event.preventDefault()"
+              >
+                Telecharger
+              </a>
+            </div>
+          </div>
+        </aside>
+      </div>
     </div>
   </body>
 </html>

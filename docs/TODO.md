@@ -27,26 +27,26 @@
 - [x] Afficher "Aucune icone trouvee pour \"{terme}\"" si 0 resultat
 
 ## Modal detail
-- [ ] Ouvrir la modal au clic sur une carte
-- [ ] Desktop: drawer droit largeur 50%
-- [ ] Mobile: pleine largeur, hauteur auto avec marges
-- [ ] Afficher nom, categorie, keywords, author (si present), description (si non vide)
-- [ ] Afficher bouton "Copier le SVG"
-- [ ] Afficher bouton "Telecharger"
-- [ ] Ne pas afficher de bloc pre en v1
+- [x] Ouvrir la modal au clic sur une carte
+- [x] Desktop: drawer droit largeur 50%
+- [x] Mobile: pleine largeur, hauteur auto avec marges
+- [x] Afficher nom, categorie, keywords, author (si present), description (si non vide)
+- [x] Afficher bouton "Copier le SVG"
+- [x] Afficher bouton "Telecharger"
+- [x] Ne pas afficher de bloc pre en v1
 
 ## Actions modal
-- [ ] Charger le SVG brut a l'ouverture detail
-- [ ] Copier via navigator.clipboard.writeText
-- [ ] Afficher "✓ Copie !" pendant 2 secondes en succes
-- [ ] Afficher un message d'erreur si la copie echoue
-- [ ] Fournir un lien download direct vers le fichier SVG
+- [x] Charger le SVG brut a l'ouverture detail
+- [x] Copier via navigator.clipboard.writeText
+- [x] Afficher "✓ Copie !" pendant 2 secondes en succes
+- [x] Afficher un message d'erreur si la copie echoue
+- [x] Fournir un lien download direct vers le fichier SVG
 
 ## Accessibilite
 - [x] Ajouter alt/aria-label sur chaque visuel
 - [x] Assurer focus visible sur tous les elements interactifs
-- [ ] Fermer la modal avec Echap
-- [ ] Implementer un focus trap complet dans la modal
+- [x] Fermer la modal avec Echap
+- [x] Implementer un focus trap complet dans la modal
 
 ## Validation finale
 - [ ] Tester rendu desktop (6 colonnes)
