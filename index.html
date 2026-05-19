@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Icon Library</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script defer src="app.js"></script>
+  </head>
+  <body>
+    <div class="app" x-data="iconGallery()">
+      <header class="site-header">
+        <h1 class="site-title">Icon Library</h1>
+
+        <form class="search-form" role="search" @submit.prevent>
+          <label for="icon-search">Rechercher une icone</label>
+          <div class="search-field-wrapper">
+            <input
+              id="icon-search"
+              name="icon-search"
+              type="search"
+              placeholder="Nom, mot-cle..."
+              autocomplete="off"
+            />
+            <button type="button" aria-label="Effacer la recherche">×</button>
+          </div>
+        </form>
+      </header>
+
+      <main class="content" id="main-content">
+        <section class="screen-error" aria-live="polite" hidden>
+          <h2>Impossible de charger la bibliotheque d'icones.</h2>
+          <p>Rafraichis la page ou verifie que icons.json est accessible.</p>
+        </section>
+
+        <section class="categories-view" aria-label="Categories d'icones">
+          <!-- Les categories et cartes icones seront rendues ici -->
+        </section>
+
+        <section class="search-results-view" aria-live="polite" hidden>
+          <!-- La grille globale de recherche sera rendue ici -->
+        </section>
+      </main>
+
+      <aside
+        class="icon-detail-modal"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="icon-detail-title"
+        hidden
+      >
+        <!-- Le detail de l'icone sera rendu ici -->
+      </aside>
+    </div>
+  </body>
+</html>

@@ -1,9 +1,9 @@
 # TODO.md — Checklist implementation
 
 ## Setup
-- [ ] Creer index.html avec structure principale et imports CDN
+- [x] Creer index.html avec structure principale et imports CDN
 - [ ] Creer style.css avec variables design system
-- [ ] Creer app.js avec composant Alpine racine
+- [x] Creer app.js avec composant Alpine racine
 
 ## Galerie (mode normal)
 - [ ] Charger icons.json au demarrage
