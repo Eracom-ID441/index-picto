@@ -18,13 +18,13 @@
 
 ## Recherche
 - [x] Ajouter un champ de recherche avec label associe
-- [ ] Ajouter debounce 300 ms
-- [ ] Filtrer sur name + keywords
-- [ ] Rendre la recherche insensible a la casse et aux accents
-- [ ] Trier les resultats alphabetiquement, accent-insensible
-- [ ] En recherche active, masquer les sections categories
-- [ ] En recherche vide, revenir au mode normal
-- [ ] Afficher "Aucune icone trouvee pour \"{terme}\"" si 0 resultat
+- [x] Ajouter debounce 300 ms
+- [x] Filtrer sur name + keywords
+- [x] Rendre la recherche insensible a la casse et aux accents
+- [x] Trier les resultats alphabetiquement, accent-insensible
+- [x] En recherche active, masquer les sections categories
+- [x] En recherche vide, revenir au mode normal
+- [x] Afficher "Aucune icone trouvee pour \"{terme}\"" si 0 resultat
 
 ## Modal detail
 - [ ] Ouvrir la modal au clic sur une carte

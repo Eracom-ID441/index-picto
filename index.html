@@ -36,9 +36,16 @@
               type="search"
               placeholder="Nom, mot-cle..."
               autocomplete="off"
-              x-model="searchQuery"
+              x-model="searchInput"
             />
-            <button type="button" aria-label="Effacer la recherche" @click="clearSearch()">x</button>
+            <button
+              type="button"
+              aria-label="Effacer la recherche"
+              @click="clearSearch()"
+              x-show="searchInput.length > 0"
+            >
+              x
+            </button>
           </div>
         </form>
       </header>
@@ -81,7 +88,32 @@
         </section>
 
         <section class="search-results-view" aria-live="polite" x-show="hasActiveSearch && !isLoading">
-          <p class="search-pending">La recherche globale sera branchee a l'etape suivante.</p>
+          <div class="icon-grid" x-show="searchResults().length > 0">
+            <template x-for="icon in searchResults()" :key="icon.id">
+              <article class="icon-card-wrapper">
+                <button
+                  type="button"
+                  class="icon-card"
+                  :aria-label="`Voir les details de ${icon.name}`"
+                  @click="openDetail(icon)"
+                >
+                  <img
+                    class="icon-image"
+                    :src="icon.file"
+                    :alt="icon.name"
+                    loading="lazy"
+                    @error="markIconAsBroken(icon.id)"
+                  />
+                  <span class="icon-name" x-text="icon.name"></span>
+                  <span class="icon-category" x-text="icon.categoryLabel"></span>
+                </button>
+              </article>
+            </template>
+          </div>
+
+          <p class="search-empty" x-show="searchResults().length === 0">
+            Aucune icone trouvee pour "<span x-text="debouncedSearchQuery"></span>"
+          </p>
         </section>
       </main>
 

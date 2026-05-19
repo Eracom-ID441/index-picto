@@ -124,6 +124,19 @@ body {
 	font-size: var(--text-sm);
 }
 
+.search-results-view {
+	display: grid;
+	gap: var(--spacing-md);
+}
+
+.search-empty {
+	margin: 0;
+	padding: var(--spacing-md);
+	border-radius: var(--radius-sm);
+	background: var(--color-bg-darker);
+	font-size: var(--text-sm);
+}
+
 .category-section {
 	margin-bottom: var(--spacing-xl);
 }
@@ -178,6 +191,11 @@ body {
 .icon-name {
 	font-size: var(--text-xs);
 	font-weight: var(--font-medium);
+}
+
+.icon-category {
+	font-size: var(--text-xs);
+	opacity: 0.85;
 }
 
 .category-empty {
