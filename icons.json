@@ -871,13 +871,13 @@
           "description": ""
         },
         {
-          "id": "joysrtick",
-          "name": "Joysrtick",
+          "id": "joystick",
+          "name": "Joystick",
           "keywords": [
-            "joysrtick",
+            "joystick",
             "game-design"
           ],
-          "file": "icons/game-design/joysrtick.svg",
+          "file": "icons/game-design/joystick.svg",
           "category": "game-design",
           "author": "classe ID451",
           "description": ""
