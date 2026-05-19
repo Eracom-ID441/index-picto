@@ -49,9 +49,9 @@
 - [x] Implementer un focus trap complet dans la modal
 
 ## Validation finale
-- [ ] Tester rendu desktop (6 colonnes)
-- [ ] Tester rendu mobile (3 colonnes)
-- [ ] Tester recherche avec accents/casse
-- [ ] Tester cas 0 resultat
-- [ ] Tester SVG manquant (galerie + modal)
-- [ ] Tester copie SVG (succes + echec)
+- [x] Tester rendu desktop (6 colonnes)
+- [x] Tester rendu mobile (3 colonnes)
+- [x] Tester recherche avec accents/casse
+- [x] Tester cas 0 resultat
+- [x] Tester SVG manquant (galerie + modal)
+- [x] Tester copie SVG (succes + echec)
