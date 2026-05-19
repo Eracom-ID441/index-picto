@@ -32,14 +32,15 @@
 ## Palette de couleurs
 
 ```css
-/* Arrière-plans */
---color-bg:		#EDF0F5 ;	/* fond général de la page */
---color-blue: 	#0145F2 ; 	/* couleur du header et des bordures et textes */
+/* Couleurs */
+--color-bg-page:        #EDF0F5;   /* fond général de la page */
+--color-bg-darker: #E5E6E8;   /* fond plus sombre */
+--color-blue:     #0145F2;   /* contraste, contours */
+--color-blue-dark:        #051BCB;   /* bordures */
 
 /* Textes */
---color-text:	#070707 ;	/* titres, noms d'icônes */
---color-lien:	#0145F2 ;	/* lien voir plus*/
-
+--color-text-primary:   #070707;   /* titres, noms d'icônes */
+```
 
 ---
 
