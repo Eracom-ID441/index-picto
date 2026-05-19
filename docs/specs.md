@@ -129,6 +129,42 @@ Au clic sur une carte, ouverture d'une modal/panneau de détail.
 
 ---
 
+## F5 — Vue complète par catégorie (V2)
+
+### Description
+Ajouter une vue dédiée qui affiche toutes les icônes d'une catégorie (et non plus
+seulement les 6 premières cartes).
+
+### Points d'entrée
+Deux chemins doivent mener à cette vue:
+- Depuis la page d'accueil, sous chaque section catégorie: lien "Voir plus"
+- Depuis le header: menu dropdown listant toutes les catégories
+
+### Comportement
+- Clic sur "Voir plus": ouvre la vue de la catégorie correspondante
+- Sélection d'une catégorie dans le dropdown: ouvre la même vue
+- La vue affiche toutes les icônes valides de la catégorie, dans l'ordre du JSON
+- Grille responsive identique au reste du site:
+  - Desktop: 6 colonnes
+  - Mobile: 3 colonnes
+- Le titre de la vue affiche le nom de la catégorie active
+- La carte d'icône garde le même comportement:
+  - Ouverture de la modal détail au clic
+  - Même règles de copie et téléchargement
+
+### Navigation
+- Bouton/lien "Retour à l'accueil" pour revenir à la vue principale
+- L'état actif de la catégorie doit rester cohérent entre lien "Voir plus" et dropdown
+
+### Cas limites
+- Si la catégorie demandée n'existe pas dans `icons.json`:
+  - Afficher un message "Catégorie introuvable"
+  - Proposer un retour à l'accueil
+- Si tous les SVG d'une catégorie sont masqués (fichiers manquants):
+  - Afficher "Aucune icône disponible" dans la vue catégorie
+
+---
+
 ## Structure de données — icons.json
 
 ```json

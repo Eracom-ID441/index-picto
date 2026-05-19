@@ -55,3 +55,15 @@
 - [x] Tester cas 0 resultat
 - [x] Tester SVG manquant (galerie + modal)
 - [x] Tester copie SVG (succes + echec)
+
+## V2 — Vue complete par categorie (F5)
+- [x] Ajouter un lien "Voir plus" sous chaque categorie en accueil
+- [x] Ajouter un dropdown categories dans le header
+- [x] Ajouter une vue categorie affichant toutes les icones de la categorie active
+- [x] Conserver l'ordre des icones selon icons.json dans la vue categorie
+- [x] Reutiliser la grille responsive existante (desktop 6, mobile 3)
+- [x] Ouvrir la modal detail depuis la vue categorie
+- [x] Ajouter un bouton "Retour a l'accueil"
+- [x] Synchroniser l'etat entre "Voir plus" et dropdown
+- [x] Gerer le cas "Categorie introuvable"
+- [x] Gerer le cas "Aucune icone disponible" dans la vue categorie
