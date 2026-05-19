@@ -185,7 +185,7 @@
         },
         {
           "id": "creativite",
-          "name": "Creativite",
+          "name": "Créativité",
           "keywords": [
             "creativite",
             "graphisme"
@@ -949,27 +949,27 @@
       "label": "Administration",
       "icons": [
         {
-          "id": "bureaudirecteur",
-          "name": "Bureaudirecteur",
+          "id": "bureau-directeur",
+          "name": "Bureau directeur",
           "keywords": [
             "bureau",
             "directeur",
             "administration"
           ],
-          "file": "icons/administration/bureaudirecteur.svg",
+          "file": "icons/administration/bureau-directeur.svg",
           "category": "administration",
           "author": "classe ID451",
           "description": ""
         },
         {
-          "id": "bureaudoyens",
-          "name": "Bureaudoyens",
+          "id": "bureau-doyens",
+          "name": "Bureau doyens",
           "keywords": [
             "bureau",
             "doyens",
             "administration"
           ],
-          "file": "icons/administration/bureaudoyens.svg",
+          "file": "icons/administration/bureau-doyens.svg",
           "category": "administration",
           "author": "classe ID451",
           "description": ""
@@ -988,7 +988,7 @@
         },
         {
           "id": "secreteriat",
-          "name": "Secreteriat",
+          "name": "Secréteriat",
           "keywords": [
             "secreteriat",
             "administration"
@@ -1018,7 +1018,7 @@
         },
         {
           "id": "cafeteria",
-          "name": "Cafeteria",
+          "name": "Caféteria",
           "keywords": [
             "cafeteria",
             "batiment"
@@ -1030,7 +1030,7 @@
         },
         {
           "id": "cafeteria2",
-          "name": "Cafeteria 2",
+          "name": "Caféteria 2",
           "keywords": [
             "cafeteria",
             "batiment"
