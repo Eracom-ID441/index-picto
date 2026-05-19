@@ -58,25 +58,9 @@ Consulte `docs/design.md` et les images dans `mockups/` pour le rendu attendu.
 
 
 ## Format du fichier icons.json
-```json
-{
-  "categories": [
-    {
-      "id": "ui",
-      "label": "Interface",
-      "icons": [
-        {
-          "id": "arrow-right",
-          "name": "Arrow Right",
-          "keywords": ["arrow", "next", "forward", "direction"],
-          "file": "icons/ui/arrow-right.svg",
-          "category": "ui"
-        }
-      ]
-    }
-  ]
-}
-```
+Consulte `docs/specs.md` qui décrit la structure du fichier icons.json
+Le fichier `icons.json` est déjà rempli et complet.
+
 **Règle absolue** : `icons.json` est la seule source de vérité. Ne jamais hardcoder d'icônes dans le HTML.
 
 ## Conventions de code

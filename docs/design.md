@@ -7,6 +7,18 @@
 
 ## Fichiers de maquette
 
+### Maquette mobile
+
+| Fichier | Contenu |
+|---------|---------|
+| `mockups/desktop-gallery.png` | Page principale — grille d'icônes, sidebar catégories, barre de recherche |
+| `mockups/mobile-gallery.png` | Page principale en vue mobile |
+| `mockups/desktop-modal.png` | Modal de détail d'une icône (ouverte) |
+| `mockups/mobile-modal.png` | Modal en vue mobile |
+| `mockups/states-hover-focus.png` | États interactifs : hover sur carte, focus clavier, bouton copié |
+
+### Maquette desktop
+
 | Fichier | Contenu |
 |---------|---------|
 | `mockups/desktop-gallery.png` | Page principale — grille d'icônes, sidebar catégories, barre de recherche |
@@ -35,34 +47,34 @@
 
 ```css
 /* Familles */
---font-heading: '[NomPolice]', sans-serif;  /* titres, nom du site */
---font-body:    '[NomPolice]', sans-serif;  /* texte courant */
---font-mono:    '[NomPolice]', monospace;   /* bloc code SVG */
+--font-body:    'Epilogue', sans-serif;  /* texte courant */
+ */
 
 /* Tailles */
---text-xs:   11px;   /* mots-clés / tags */
---text-sm:   13px;   /* labels secondaires, compteur */
---text-base: 15px;   /* corps de texte */
---text-lg:   18px;   /* nom d'icône dans la modal */
+--text-xs:   14px;   /* nom des icones mobile */
+--text-sm:   15px;   /* header mobile */
+--text-base: 19px;   /* corps de texte mobile */
 --text-xl:   22px;   /* titre de section */
 --text-2xl:  28px;   /* titre du site (header) */
 
 /* Graisses */
 --font-normal:   400;
---font-medium:   500;
+--font-medium:   500; /* Corps de texte */
 --font-semibold: 600;
 --font-bold:     700;
 
 /* Hauteurs de ligne */
---leading-tight:  1.2;
+--leading-tight:  1.05;
 --leading-normal: 1.5;
 ```
 
-> **Import Google Fonts** (si applicable) :
-> ```html
-> <link rel="preconnect" href="https://fonts.googleapis.com">
-> <link href="https://fonts.googleapis.com/css2?family=[NomPolice]&display=swap" rel="stylesheet">
-> ```
+### Import Google Fonts
+
+```html
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+```
 
 ---
 
@@ -76,17 +88,6 @@
 --spacing-lg:  24px;
 --spacing-xl:  32px;
 --spacing-2xl: 48px;
-
-/* Rayons de bordure */
---radius-sm:   4px;   /* badges, tags */
---radius-md:   8px;   /* cartes icônes */
---radius-lg:   12px;  /* modal, sidebar */
---radius-full: 9999px; /* boutons pill, champ de recherche */
-
-/* Ombres */
---shadow-card:  0 1px 3px rgba(0,0,0,0.08), 0 1px 2px rgba(0,0,0,0.04);
---shadow-card-hover: 0 4px 12px rgba(0,0,0,0.10);
---shadow-modal: 0 20px 60px rgba(0,0,0,0.15);
 ```
 
 ---
