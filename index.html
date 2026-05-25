@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Icon Library</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body x-data="iconGallery()" @keydown.escape="closeDrawer" x-cloak>
+  <header class="header">
+    <div class="container">
+      <h1 class="header-title">Icon Library</h1>
+      <div class="search-wrapper">
+        <label for="search-input" class="sr-only">Rechercher des icônes</label>
+        <input
+          type="search"
+          id="search-input"
+          x-model="searchTerm"
+          placeholder="Rechercher une icône…"
+          class="search-input"
+        >
+      </div>
+    </div>
+  </header>
+
+  <main class="main container">
+    <div x-show="loading" class="message-full">
+      Chargement…
+    </div>
+
+    <div x-show="loadError" class="message-full message-error">
+      <p>Impossible de charger les icônes.</p>
+      <p>Veuillez réessayer plus tard.</p>
+    </div>
+
+    <template x-if="!loading && !loadError && !isSearchActive">
+      <div>
+        <template x-for="category in visibleCategories" :key="category.id">
+          <section class="category-section">
+            <h2 class="category-title" x-text="category.label"></h2>
+            <template x-if="category.displayIcons.length > 0">
+              <div class="grid">
+                <template x-for="icon in category.displayIcons" :key="icon.id">
+                  <div
+                    class="card"
+                    @click="openDetail(icon)"
+                    role="button"
+                    tabindex="0"
+                    @keydown.enter="openDetail(icon)"
+                    :aria-label="icon.name"
+                  >
+                    <div class="card-icon">
+                      <img
+                        :src="icon.file"
+                        :alt="icon.name"
+                        @error="handleImageError(icon)"
+                        x-show="!icon.error"
+                      >
+                    </div>
+                    <span class="card-name" x-text="icon.name"></span>
+                  </div>
+                </template>
+              </div>
+            </template>
+            <p
+              x-show="category.displayIcons.length === 0"
+              class="empty-message"
+            >
+              Aucune icône disponible
+            </p>
+          </section>
+        </template>
+      </div>
+    </template>
+
+    <template x-if="isSearchActive && !loading && !loadError">
+      <div>
+        <template x-if="searchResults.length > 0">
+          <div class="grid">
+            <template x-for="icon in searchResults" :key="icon.id">
+              <div
+                class="card"
+                @click="openDetail(icon)"
+                role="button"
+                tabindex="0"
+                @keydown.enter="openDetail(icon)"
+                :aria-label="icon.name"
+              >
+                <div class="card-icon">
+                  <img
+                    :src="icon.file"
+                    :alt="icon.name"
+                    @error="handleImageError(icon)"
+                    x-show="!icon.error"
+                  >
+                </div>
+                <span class="card-name" x-text="icon.name"></span>
+              </div>
+            </template>
+          </div>
+        </template>
+        <p
+          x-show="searchResults.length === 0"
+          class="empty-message"
+        >
+          Aucune icône trouvée pour "<span x-text="debouncedTerm"></span>"
+        </p>
+      </div>
+    </template>
+  </main>
+
+  <div
+    class="drawer-backdrop"
+    x-show="isDrawerOpen"
+    x-transition.opacity
+    @click="closeDrawer"
+  ></div>
+
+  <div
+    class="drawer"
+    x-show="isDrawerOpen"
+    x-transition:enter="drawer-enter"
+    x-transition:enter-start="drawer-enter-from"
+    x-transition:enter-end="drawer-enter-to"
+    x-transition:leave="drawer-leave"
+    x-transition:leave-start="drawer-leave-from"
+    x-transition:leave-end="drawer-leave-to"
+    role="dialog"
+    aria-modal="true"
+    :aria-label="'Détail : ' + (selectedIcon ? selectedIcon.name : '')"
+  >
+    <button class="drawer-close" @click="closeDrawer" aria-label="Fermer">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M18 6L6 18M6 6l12 12"/>
+      </svg>
+    </button>
+
+    <div class="drawer-body" x-show="selectedIcon">
+      <div class="drawer-icon" x-show="detailSvg && detailSvg !== 'error'" x-html="detailSvg"></div>
+      <div x-show="detailSvg === 'error'" class="drawer-error">
+        Impossible de charger le SVG
+      </div>
+
+      <h2 class="drawer-name" x-text="selectedIcon.name"></h2>
+
+      <p class="drawer-category" x-text="selectedIcon.category"></p>
+
+      <div class="drawer-keywords" x-show="selectedIcon.keywords && selectedIcon.keywords.length">
+        <template x-for="kw in selectedIcon.keywords" :key="kw">
+          <span class="keyword" x-text="kw"></span>
+        </template>
+      </div>
+
+      <p x-show="selectedIcon.author" class="drawer-author">
+        Par <span x-text="selectedIcon.author"></span>
+      </p>
+
+      <p x-show="selectedIcon.description" class="drawer-desc" x-text="selectedIcon.description"></p>
+
+      <div class="drawer-actions">
+        <button
+          class="btn btn-copy"
+          @click="copySvg"
+          :disabled="!detailSvg || detailSvg === 'error'"
+        >
+          <span x-text="copyButtonText">Copier le SVG</span>
+        </button>
+        <a
+          :href="selectedIcon.file"
+          download
+          class="btn btn-download"
+        >
+          Télécharger
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <script defer src="app.js"></script>
+</body>
+</html>

@@ -7,6 +7,24 @@ d'environ 100 icônes SVG classées par catégories.
 Le site vise des développeurs et designers qui doivent trouver vite une icône,
 prévisualiser son rendu, puis copier le SVG ou télécharger le fichier.
 
+## Décisions d'implémentation (v1)
+
+### Layout
+- Pas de sidebar desktop — navigation via future dropdown (V2)
+- Drawer de détail en overlay (pas de push du contenu)
+- Drawer : desktop 50% viewport depuis la droite, mobile pleine largeur centré
+- F5 (Vue complète par catégorie) repoussé en V2
+
+### Gestion des erreurs
+- SVG manquant : carte masquée silencieusement (pas de placeholder)
+- `icons.json` échoué : écran d'erreur plein écran
+- Catégorie vide après masquage : message "Aucune icône disponible"
+
+### Recherche
+- Debounce 300ms via `$watch` + timer (le modèle reste immédiat, le filtrage est débouncé)
+- Normalisation NFD pour les accents
+- Tri alphabétique avec `localeCompare(..., 'fr', { sensitivity: 'base' })`
+
 ## Hors périmètre (v1)
 - Pas d'authentification
 - Pas de favoris persistants (pas de localStorage)
@@ -14,6 +32,9 @@ prévisualiser son rendu, puis copier le SVG ou télécharger le fichier.
 - Pas de switch thème clair/sombre
 - Pas de pagination
 - Pas de backend ni API
+- Pas de sidebar
+- Pas de pages accueil/à propos/licence
+- Pas de F5 (vue complète par catégorie)
 
 ---
 

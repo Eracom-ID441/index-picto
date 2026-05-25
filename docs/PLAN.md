@@ -89,60 +89,36 @@ Ordre recommande:
 - Dependances: 1..10
 - Regles: test desktop/mobile, erreurs reseau, SVG manquants
 
-## 3. Sous-agents personnalises utiles
+## 3. Decisions d'implementation
 
-Aucun sous-agent n'est necessaire pour construire ce projet: la surface est petite
-et les choix sont deja verrouilles.
+- **Sidebar**: pas de sidebar — navigation par dropdown header (V2)
+- **Drawer detail**: overlay (pas de push), desktop 50% droit, mobile pleine largeur
+- **F5**: repousse en V2
+- **SVG manquant**: carte masquee silencieusement (img onerror -> icon.error = true)
+- **icons.json erreur**: ecran plein page
+- **Debounce**: $watch sur searchTerm, timer 300ms vers debouncedTerm
+- **Accents**: normalize('NFD') + replace combining marks
+- **Tri**: localeCompare(..., 'fr', { sensitivity: 'base' })
 
-Si tu veux accelerer ensuite, deux sous-agents peuvent etre utiles:
+## 4. Sous-agents personnalises
 
-- UI-Polish Agent (optionnel)
-  - Verifier fidelite visuelle vs mockups
-  - Proposer ajustements CSS precis sans changer le layout
+Aucun sous-agent necessaire pour la v1.
 
-- A11y-Check Agent (optionnel)
-  - Audit des labels, ordre de tabulation, focus trap, Echap
-  - Retour concret des ecarts et correctifs minimaux
-
-## 4. Roadmap V2 (F5)
+## 5. Roadmap V2 (F5)
 
 Objectif V2:
 - Ajouter une vue complete par categorie, accessible depuis deux points d'entree:
   - lien "Voir plus" sous chaque categorie sur l'accueil
   - dropdown categories dans le header
 
-Etat actuel:
-- V2 F5 est implemente techniquement.
-- Le comportement est coherent avec la spec:
-  - ouverture de la vue categorie depuis "Voir plus"
-  - ouverture de la vue categorie depuis dropdown
-  - affichage de toutes les icones de la categorie
-  - retour accueil
-  - cas "Categorie introuvable" et "Aucune icone disponible"
-
-Decoupage V2 (trace implementation):
-
-1. Navigation categorie depuis accueil
-- Dependances: V1 complete
-- Sortie: bouton "Voir plus" par section categorie
-
-2. Navigation categorie depuis header
-- Dependances: 1
-- Sortie: dropdown categories synchronise avec la vue active
-
-3. Vue categorie complete
-- Dependances: 1, 2
-- Sortie: grille complete de la categorie active (ordre JSON)
-
-4. Etats et fallback
-- Dependances: 3
-- Sortie: gestion "Categorie introuvable" et categorie vide
-
+Decoupage V2:
+1. Navigation categorie depuis accueil ("Voir plus")
+2. Navigation categorie depuis header (dropdown)
+3. Vue categorie complete (toutes les icones, ordre JSON)
+4. Etats et fallback ("introuvable", "aucune disponible")
 5. Validation V2
-- Dependances: 1..4
-- Sortie: parcours "Voir plus", dropdown, retour accueil, modal detail
 
 Pistes V2.1 (optionnel):
 - URL state (hash/query) pour partager directement une categorie
 - Moteur de recherche scope a la categorie active
-- Ajout d'un fil d'Ariane dans la vue categorie
+- Fil d'Ariane dans la vue categorie
