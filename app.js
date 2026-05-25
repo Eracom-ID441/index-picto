@@ -2,8 +2,6 @@ window.iconGallery = function iconGallery() {
   return {
     categories: [],
     search: '',
-    searchActive: false,
-    searchResults: [],
     error: false,
     modalOpen: false,
     modalIcon: null,
@@ -13,6 +11,10 @@ window.iconGallery = function iconGallery() {
     copied: false,
     copyFallback: false,
     lastFocused: null,
+    iconSize: 64,
+    categoryFilter: '',
+    expandedCategories: [],
+    menuOpen: false,
     async init() {
       try {
         const res = await fetch('icons.json');
@@ -28,6 +30,10 @@ window.iconGallery = function iconGallery() {
     },
     hideIcon(icon, cat) {
       cat.icons = cat.icons.filter(i => i.id !== icon.id);
+    },
+    get filteredCategories() {
+      if (!this.categoryFilter) return this.categories;
+      return this.categories.filter(cat => cat.id === this.categoryFilter);
     },
     get searchResults() {
       if (!this.search.trim()) return [];
@@ -50,6 +56,17 @@ window.iconGallery = function iconGallery() {
     get searchActive() {
       return !!this.search.trim();
     },
+    toggleCategory(id) {
+      const idx = this.expandedCategories.indexOf(id);
+      if (idx === -1) {
+        this.expandedCategories.push(id);
+      } else {
+        this.expandedCategories.splice(idx, 1);
+      }
+    },
+    isCategoryExpanded(id) {
+      return this.expandedCategories.includes(id);
+    },
     openModal(icon, cat) {
       this.modalIcon = icon;
       this.modalCategory = cat;
@@ -59,12 +76,12 @@ window.iconGallery = function iconGallery() {
       this.copied = false;
       this.copyFallback = false;
       this.lastFocused = document.activeElement;
-      fetch(this.iconImgSrc(icon))
+      fetch(icon.file)
         .then(r => r.ok ? r.text() : Promise.reject('fetch'))
         .then(svg => { this.modalSvg = svg; })
         .catch(() => { this.modalError = 'Erreur lors du chargement du SVG.'; });
       this.$nextTick(() => {
-        const modal = document.querySelector('.iconlib-modal');
+        const modal = document.querySelector('.iconlib-modal-panel');
         if (modal) modal.focus();
       });
     },
