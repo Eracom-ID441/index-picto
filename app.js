@@ -1,4 +1,4 @@
-function iconGallery() {
+window.iconGallery = function iconGallery() {
   return {
     categories: [],
     search: '',
@@ -24,7 +24,7 @@ function iconGallery() {
       }
     },
     iconImgSrc(icon) {
-      return `icons/${icon.category}/${icon.file}`;
+      return icon.file;
     },
     hideIcon(icon, cat) {
       cat.icons = cat.icons.filter(i => i.id !== icon.id);
