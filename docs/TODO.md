@@ -14,7 +14,7 @@
 ## Gestion erreurs
 - [ ] Afficher un ecran d'erreur plein page si icons.json ne charge pas
 - [ ] Masquer une carte si son SVG est introuvable
-- [ ] Afficher "Aucune icone disponible" si categorie vide apres masquage
+- [ ] Masquer la section si catégorie vide (aucun message)
 
 ## Recherche
 - [ ] Ajouter un champ de recherche avec label associe
@@ -40,6 +40,7 @@
 - [ ] Copier via navigator.clipboard.writeText
 - [ ] Afficher "✓ Copie !" pendant 2 secondes en succes
 - [ ] Afficher un message d'erreur si la copie echoue
+- [ ] Fallback textarea modale si clipboard API indisponible
 - [ ] Fournir un lien download direct vers le fichier SVG
 
 ## Accessibilite
@@ -47,6 +48,7 @@
 - [ ] Assurer focus visible sur tous les elements interactifs
 - [ ] Fermer la modal avec Echap
 - [ ] Implementer un focus trap complet dans la modal
+- [ ] À la fermeture de la modal, focus sur la carte d’origine
 
 ## Validation finale
 - [ ] Tester rendu desktop (6 colonnes)

@@ -1,0 +1,93 @@
+function iconGallery() {
+  return {
+    categories: [],
+    search: '',
+    searchActive: false,
+    searchResults: [],
+    error: false,
+    modalOpen: false,
+    modalIcon: null,
+    modalCategory: null,
+    modalSvg: '',
+    modalError: '',
+    copied: false,
+    copyFallback: false,
+    lastFocused: null,
+    async init() {
+      try {
+        const res = await fetch('icons.json');
+        if (!res.ok) throw new Error('fetch');
+        const data = await res.json();
+        this.categories = data.categories.map(cat => ({...cat, icons: cat.icons.map(icon => ({...icon, categoryObj: cat}))}));
+      } catch (e) {
+        this.error = true;
+      }
+    },
+    iconImgSrc(icon) {
+      return `icons/${icon.category}/${icon.file}`;
+    },
+    hideIcon(icon, cat) {
+      cat.icons = cat.icons.filter(i => i.id !== icon.id);
+    },
+    get searchResults() {
+      if (!this.search.trim()) return [];
+      const norm = s => s.normalize('NFD').replace(/\p{Diacritic}/gu, '').toLowerCase();
+      const term = norm(this.search);
+      let results = [];
+      this.categories.forEach(cat => {
+        cat.icons.forEach(icon => {
+          if (
+            norm(icon.name).includes(term) ||
+            (icon.keywords && icon.keywords.some(k => norm(k).includes(term)))
+          ) {
+            results.push({...icon, categoryObj: cat});
+          }
+        });
+      });
+      results.sort((a, b) => norm(a.name).localeCompare(norm(b.name)));
+      return results;
+    },
+    get searchActive() {
+      return !!this.search.trim();
+    },
+    openModal(icon, cat) {
+      this.modalIcon = icon;
+      this.modalCategory = cat;
+      this.modalOpen = true;
+      this.modalSvg = '';
+      this.modalError = '';
+      this.copied = false;
+      this.copyFallback = false;
+      this.lastFocused = document.activeElement;
+      fetch(this.iconImgSrc(icon))
+        .then(r => r.ok ? r.text() : Promise.reject('fetch'))
+        .then(svg => { this.modalSvg = svg; })
+        .catch(() => { this.modalError = 'Erreur lors du chargement du SVG.'; });
+      this.$nextTick(() => {
+        const modal = document.querySelector('.iconlib-modal');
+        if (modal) modal.focus();
+      });
+    },
+    closeModal() {
+      this.modalOpen = false;
+      this.modalIcon = null;
+      this.modalCategory = null;
+      this.modalSvg = '';
+      this.modalError = '';
+      this.copied = false;
+      this.copyFallback = false;
+      if (this.lastFocused) this.lastFocused.focus();
+    },
+    async copySvg() {
+      if (!this.modalSvg) return;
+      try {
+        await navigator.clipboard.writeText(this.modalSvg);
+        this.copied = true;
+        setTimeout(() => { this.copied = false; }, 2000);
+      } catch (e) {
+        this.copyFallback = true;
+        setTimeout(() => { this.copyFallback = false; }, 8000);
+      }
+    }
+  };
+}

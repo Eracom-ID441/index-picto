@@ -1,3 +1,8 @@
+## 5. Décisions spécifiques validées (mai 2026)
+
+- Fallback copie SVG : textarea modale (popup) si clipboard API indisponible
+- Catégories vides : section masquée (aucun message)
+- Focus modal : à la fermeture, retour sur la carte d’origine
 # PLAN.md — Plan d'implementation
 
 ## 1. Architecture et structure de fichiers

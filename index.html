@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Icon Library — Eracom</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700&display=swap" rel="stylesheet">
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body x-data="iconGallery()" class="iconlib-bg">
+  <header class="iconlib-header">
+    <h1 class="iconlib-title">Icon Library</h1>
+    <form class="iconlib-search" @submit.prevent>
+      <label for="search" class="iconlib-search-label">Rechercher une icône</label>
+      <input id="search" name="search" type="search" x-model="search" placeholder="Nom ou mot-clé..." autocomplete="off" class="iconlib-search-input">
+    </form>
+  </header>
+  <main class="iconlib-main">
+    <!-- Sections catégories et grille recherche -->
+    <template x-if="error">
+      <div class="iconlib-error">Impossible de charger les icônes. Veuillez réessayer plus tard.</div>
+    </template>
+    <div x-show="!error">
+      <div x-show="!searchActive">
+        <!-- Sections catégories -->
+        <template x-for="cat in categories" :key="cat.id">
+          <section class="iconlib-category" x-show="cat.icons.length">
+            <h2 class="iconlib-category-title" x-text="cat.label"></h2>
+            <div class="iconlib-grid">
+              <template x-for="icon in cat.icons.slice(0,6)" :key="icon.id">
+                <button class="iconlib-card" @click="openModal(icon, cat)" :aria-label="icon.name" :title="icon.name">
+                  <img :src="iconImgSrc(icon)" :alt="icon.name" class="iconlib-img" @error="hideIcon(icon, cat)">
+                  <span class="iconlib-name" x-text="icon.name"></span>
+                </button>
+              </template>
+            </div>
+          </section>
+        </template>
+      </div>
+      <div x-show="searchActive">
+        <!-- Grille recherche -->
+        <div class="iconlib-grid">
+          <template x-for="icon in searchResults" :key="icon.id">
+            <button class="iconlib-card" @click="openModal(icon, icon.categoryObj)" :aria-label="icon.name" :title="icon.name">
+              <img :src="iconImgSrc(icon)" :alt="icon.name" class="iconlib-img" @error="hideIcon(icon, icon.categoryObj)">
+              <span class="iconlib-name" x-text="icon.name"></span>
+            </button>
+          </template>
+        </div>
+        <template x-if="searchResults.length === 0">
+          <div class="iconlib-empty">Aucune icône trouvée pour "<span x-text="search"></span>"</div>
+        </template>
+      </div>
+    </div>
+    <!-- Modal détail -->
+    <div x-show="modalOpen" class="iconlib-modal" @keydown.escape.window="closeModal" tabindex="-1" role="dialog" aria-modal="true">
+      <div class="iconlib-modal-content" @click.outside="closeModal">
+        <button class="iconlib-modal-close" @click="closeModal" aria-label="Fermer">&times;</button>
+        <template x-if="modalIcon">
+          <div>
+            <div class="iconlib-modal-img" x-html="modalSvg"></div>
+            <h3 class="iconlib-modal-name" x-text="modalIcon.name"></h3>
+            <div class="iconlib-modal-meta">
+              <span x-text="modalCategory.label"></span>
+              <template x-if="modalIcon.author">
+                <span>· <span x-text="modalIcon.author"></span></span>
+              </template>
+            </div>
+            <template x-if="modalIcon.description">
+              <p class="iconlib-modal-desc" x-text="modalIcon.description"></p>
+            </template>
+            <div class="iconlib-modal-actions">
+              <button class="iconlib-btn" @click="copySvg()" x-text="copied ? '✓ Copié !' : 'Copier le SVG'"></button>
+              <a class="iconlib-btn" :href="modalIcon.file ? iconImgSrc(modalIcon) : '#'" download :aria-disabled="!modalIcon.file">Télécharger</a>
+            </div>
+            <template x-if="copyFallback">
+              <div class="iconlib-modal-fallback">
+                <label for="svg-fallback">Copiez le code SVG&nbsp;:</label>
+                <textarea id="svg-fallback" readonly x-text="modalSvg" @focus="$event.target.select()"></textarea>
+              </div>
+            </template>
+            <template x-if="modalError">
+              <div class="iconlib-modal-error" x-text="modalError"></div>
+            </template>
+          </div>
+        </template>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

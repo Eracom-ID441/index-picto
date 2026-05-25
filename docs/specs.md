@@ -41,8 +41,7 @@ prévisualiser son rendu, puis copier le SVG ou télécharger le fichier.
 ### Erreurs
 - Si `icons.json` échoue au chargement: message d'erreur plein écran.
 - Si un SVG est manquant en galerie: carte masquée.
-- Si une catégorie ne contient plus aucune carte visible: section affichée avec
-  le message "Aucune icône disponible".
+- Si une catégorie ne contient plus aucune carte visible: section masquée (aucun message).
 
 ---
 
@@ -115,7 +114,8 @@ Au clic sur une carte, ouverture d'une modal/panneau de détail.
 - Copier le SVG:
   - Utilise `navigator.clipboard.writeText()`
   - En succès: bouton "✓ Copié !" pendant 2 secondes
-  - En échec: message d'erreur (pas de fallback textarea)
+  - En échec: message d'erreur
+  - Si l'API clipboard n'est pas disponible: fallback textarea dans une modale popup
 - Télécharger:
   - Lien `<a href="..." download>`
 
@@ -123,6 +123,7 @@ Au clic sur une carte, ouverture d'une modal/panneau de détail.
 - Bouton fermer
 - Touche Echap
 - Focus trap complet dans la modal
+- À la fermeture, le focus revient sur la carte d'origine
 
 ### Cas limites
 - Si fetch du SVG échoue: message d'erreur dans la modal, sans crash
