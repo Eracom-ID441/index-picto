@@ -67,6 +67,7 @@ body {
 
 @media (min-width: 700px) {
   .iconlib-nav { display: flex; }
+  .iconlib-hamburger { display: none !important; }
 }
 
 .iconlib-nav-link {

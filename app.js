@@ -56,6 +56,12 @@ window.iconGallery = function iconGallery() {
     get searchActive() {
       return !!this.search.trim();
     },
+    resetHome() {
+      this.search = '';
+      this.categoryFilter = '';
+      this.closeModal();
+      this.menuOpen = false;
+    },
     toggleCategory(id) {
       const idx = this.expandedCategories.indexOf(id);
       if (idx === -1) {
