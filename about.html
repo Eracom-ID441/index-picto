@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>À propos — Icon Library</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <style>
+    .iconlib-mobile-menu { display: none; }
+    .iconlib-mobile-menu.visible { display: flex; }
+  </style>
+</head>
+<body>
+  <header class="iconlib-header">
+    <a href="index.html" class="iconlib-logo">Icon Library</a>
+    <nav class="iconlib-nav" aria-label="Navigation principale">
+      <a href="index.html" class="iconlib-nav-link">Accueil</a>
+      <a href="index.html" class="iconlib-nav-link">Icônes</a>
+      <a href="about.html" class="iconlib-nav-link">À propos</a>
+      <a href="licence.html" class="iconlib-nav-link">Licence</a>
+    </nav>
+    <button class="iconlib-hamburger" aria-label="Menu" aria-expanded="false">
+      <span class="iconlib-hamburger-bar" aria-hidden="true"></span>
+      <span class="iconlib-hamburger-bar" aria-hidden="true"></span>
+      <span class="iconlib-hamburger-bar" aria-hidden="true"></span>
+    </button>
+  </header>
+
+  <nav class="iconlib-mobile-menu" aria-label="Menu mobile">
+    <a href="index.html" class="iconlib-mobile-menu-link">Accueil <span aria-hidden="true">→</span></a>
+    <a href="index.html" class="iconlib-mobile-menu-link">Icônes <span aria-hidden="true">→</span></a>
+    <a href="about.html" class="iconlib-mobile-menu-link">À propos <span aria-hidden="true">→</span></a>
+    <a href="licence.html" class="iconlib-mobile-menu-link">Licence <span aria-hidden="true">→</span></a>
+  </nav>
+
+  <main class="iconlib-main about-page">
+    <section class="about-hero">
+      <h1>À propos du projet</h1>
+    </section>
+
+    <section class="about-grid">
+      <article class="about-card">
+        <div class="about-icon" aria-hidden="true">
+          <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M32 16L8 26L32 36L56 26L32 16Z" />
+            <path d="M16 28V40C16 46 24 52 32 52C40 52 48 46 48 40V28" />
+            <path d="M22 44L42 44" />
+          </svg>
+        </div>
+        <div>
+          <h2>Un projet pour les étudiants</h2>
+          <p>Au printemps 2026, l'Eracom a débuté le développement d'une collection d'icônes et pictogrammes sur le thème des métiers de l'école, du design et de la communication.</p>
+        </div>
+      </article>
+
+      <article class="about-card">
+        <div class="about-icon" aria-hidden="true">
+          <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20 16L40 36" />
+            <path d="M28 24L56 24L52 52L20 16Z" />
+            <path d="M16 48L28 36" />
+          </svg>
+        </div>
+        <div>
+          <h2>Des icônes pour les métiers créatifs</h2>
+          <p>Ces icônes représentent de nombreux motifs liés aux métiers des arts appliqués, en particulier le graphisme, le design interactif, l'audiovisuel, la création de vêtements et l'industrie de l'imprimé.</p>
+        </div>
+      </article>
+
+      <article class="about-card">
+        <div class="about-icon" aria-hidden="true">
+          <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 20H46" />
+            <path d="M18 32H46" />
+            <path d="M18 44H46" />
+            <path d="M24 12L18 20L24 28" />
+            <path d="M40 36L46 44L40 52" />
+          </svg>
+        </div>
+        <div>
+          <h2>Un outil pour de nombreux usages</h2>
+          <p>L’utilisation de pictogrammes est essentielle pour de nombreux usages graphiques, tels que la signalétique d’intérieur, les documents officiels ou encore l’UI d’applications et de sites web.</p>
+        </div>
+      </article>
+
+      <article class="about-card">
+        <div class="about-icon" aria-hidden="true">
+          <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="32" cy="32" r="20" />
+            <path d="M12 32H52" />
+            <path d="M32 12C39 20 39 44 32 52" />
+            <path d="M32 12C25 20 25 44 32 52" />
+          </svg>
+        </div>
+        <div>
+          <h2>Un catalogue en licence ouverte</h2>
+          <p>Ce catalogue vient enrichir l'écosystème des collections d'icônes sous licence ouverte, et met en avant les réalisations des étudiant·es de l'Eracom.</p>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <script>
+    const mobileMenuBtn = document.querySelector('.iconlib-hamburger');
+    const mobileMenu = document.querySelector('.iconlib-mobile-menu');
+    mobileMenuBtn?.addEventListener('click', () => {
+      const isOpen = mobileMenu.classList.toggle('visible');
+      mobileMenuBtn.setAttribute('aria-expanded', String(isOpen));
+    });
+  </script>
+</body>
+</html>
