@@ -17,10 +17,10 @@
   <header class="iconlib-header">
     <a href="#" @click.prevent="resetHome()" class="iconlib-logo">Icon Library</a>
     <nav class="iconlib-nav" aria-label="Navigation principale">
-      <a href="#" class="iconlib-nav-link">Accueil</a>
-      <a href="#" class="iconlib-nav-link">Icônes</a>
-      <a href="#" class="iconlib-nav-link">À propos</a>
-      <a href="#" class="iconlib-nav-link">Licence</a>
+      <a href="index.html" class="iconlib-nav-link">Accueil</a>
+      <a href="index.html" class="iconlib-nav-link">Icônes</a>
+      <a href="about.html" class="iconlib-nav-link">À propos</a>
+      <a href="licence.html" class="iconlib-nav-link">Licence</a>
     </nav>
     <button class="iconlib-hamburger" @click="menuOpen = !menuOpen" :aria-expanded="menuOpen.toString()" aria-label="Menu">
       <span class="iconlib-hamburger-bar" aria-hidden="true"></span>
@@ -31,10 +31,10 @@
 
   <!-- Mobile menu -->
   <nav x-show="menuOpen" class="iconlib-mobile-menu" aria-label="Menu mobile" @keydown.escape.window="menuOpen = false">
-    <a href="#" class="iconlib-mobile-menu-link" @click="menuOpen = false">Accueil <span aria-hidden="true">→</span></a>
-    <a href="#" class="iconlib-mobile-menu-link" @click="menuOpen = false">Icônes <span aria-hidden="true">→</span></a>
-    <a href="#" class="iconlib-mobile-menu-link" @click="menuOpen = false">À propos <span aria-hidden="true">→</span></a>
-    <a href="#" class="iconlib-mobile-menu-link" @click="menuOpen = false">Licence <span aria-hidden="true">→</span></a>
+    <a href="index.html" class="iconlib-mobile-menu-link" @click="menuOpen = false">Accueil <span aria-hidden="true">→</span></a>
+    <a href="index.html" class="iconlib-mobile-menu-link" @click="menuOpen = false">Icônes <span aria-hidden="true">→</span></a>
+    <a href="about.html" class="iconlib-mobile-menu-link" @click="menuOpen = false">À propos <span aria-hidden="true">→</span></a>
+    <a href="licence.html" class="iconlib-mobile-menu-link" @click="menuOpen = false">Licence <span aria-hidden="true">→</span></a>
   </nav>
 
   <!-- Toolbar: search + categories + size slider -->
