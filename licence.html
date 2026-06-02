@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Licence — Icon Library</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <style>
+    .iconlib-mobile-menu { display: none; }
+    .iconlib-mobile-menu.visible { display: flex; }
+  </style>
+</head>
+<body>
+  <header class="iconlib-header">
+    <a href="index.html" class="iconlib-logo">Icon Library</a>
+    <nav class="iconlib-nav" aria-label="Navigation principale">
+      <a href="index.html" class="iconlib-nav-link">Accueil</a>
+      <a href="index.html" class="iconlib-nav-link">Icônes</a>
+      <a href="about.html" class="iconlib-nav-link">À propos</a>
+      <a href="licence.html" class="iconlib-nav-link">Licence</a>
+    </nav>
+    <button class="iconlib-hamburger" aria-label="Menu" aria-expanded="false">
+      <span class="iconlib-hamburger-bar" aria-hidden="true"></span>
+      <span class="iconlib-hamburger-bar" aria-hidden="true"></span>
+      <span class="iconlib-hamburger-bar" aria-hidden="true"></span>
+    </button>
+  </header>
+
+  <nav class="iconlib-mobile-menu" aria-label="Menu mobile">
+    <a href="index.html" class="iconlib-mobile-menu-link">Accueil <span aria-hidden="true">→</span></a>
+    <a href="index.html" class="iconlib-mobile-menu-link">Icônes <span aria-hidden="true">→</span></a>
+    <a href="about.html" class="iconlib-mobile-menu-link">À propos <span aria-hidden="true">→</span></a>
+    <a href="licence.html" class="iconlib-mobile-menu-link">Licence <span aria-hidden="true">→</span></a>
+  </nav>
+
+  <main class="iconlib-main license-page">
+    <section class="license-hero">
+      <p class="license-hero-label">LES ICÔNES PRÉSENTÉES SUR CE SITE SONT PUBLIÉES SOUS LA LICENCE CREATIVE COMMONS ZERO (CC0).</p>
+    </section>
+
+    <section class="license-grid">
+      <article class="license-card">
+        <div class="license-card-icon" aria-hidden="true">
+          <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M16 26L28 38L48 18" />
+            <path d="M8 22V32C8 48 16 56 32 56C48 56 56 48 56 32V22L32 8L8 22Z" />
+          </svg>
+        </div>
+        <div>
+          <h2>Utilisation libre</h2>
+          <p>Les icônes peuvent être utilisées librement, pour des usages non commerciaux et commerciaux.</p>
+        </div>
+      </article>
+
+      <article class="license-card">
+        <div class="license-card-icon" aria-hidden="true">
+          <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20 44L44 20L52 28L28 52L20 44Z" />
+            <path d="M28 12L52 36" />
+            <path d="M18 46L10 56L18 58L28 48" />
+          </svg>
+        </div>
+        <div>
+          <h2>Modification autorisée</h2>
+          <p>La modification et l'adaptation de ces icônes sont autorisées.</p>
+        </div>
+      </article>
+
+      <article class="license-card">
+        <div class="license-card-icon" aria-hidden="true">
+          <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="32" cy="22" r="10" />
+            <path d="M16 54C16 41.8 22.8 30 32 30C41.2 30 48 41.8 48 54" />
+          </svg>
+        </div>
+        <div>
+          <h2>Pas d’attribution obligatoire</h2>
+          <p>Mentionner l’auteur·rice ou l’Eracom n’est pas obligatoire, mais toujours apprécié. 🙏</p>
+        </div>
+      </article>
+    </section>
+
+    <section class="license-footer">
+      <p>La licence CC0 est un outil mis à disposition par l'organisation Creative Commons. Pour plus d'informations sur cette licence, <a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank" rel="noreferrer noopener">consultez la page officielle</a>.</p>
+      <div class="license-badge-block">
+        <p class="license-badge-label">CC0 1.0 UNIVERSAL</p>
+        <a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank" rel="noreferrer noopener" class="license-badge-link" aria-label="Creative Commons Public Domain Mark">
+          <svg viewBox="0 0 120 40" aria-hidden="true">
+            <rect width="120" height="40" fill="#000" />
+            <circle cx="24" cy="20" r="12" fill="#fff" />
+            <path d="M29 20a5 5 0 1 1-10 0 5 5 0 0 1 10 0Z" fill="#000" />
+            <path d="M36 28H44V12H36V28Z" fill="#fff" />
+            <text x="60" y="24" fill="#fff" font-family="Epilogue, sans-serif" font-size="11" font-weight="700">PUBLIC DOMAIN</text>
+          </svg>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    const mobileMenuBtn = document.querySelector('.iconlib-hamburger');
+    const mobileMenu = document.querySelector('.iconlib-mobile-menu');
+    mobileMenuBtn?.addEventListener('click', () => {
+      const isOpen = mobileMenu.classList.toggle('visible');
+      mobileMenuBtn.setAttribute('aria-expanded', String(isOpen));
+    });
+  </script>
+</body>
+</html>
