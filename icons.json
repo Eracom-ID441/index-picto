@@ -1098,188 +1098,7 @@
       "icons": [
         {
           "id": "economat-1",
-      ,
-      {
-        "id": "creation-vetements",
-        "label": "Création vêtements",
-        "icons": [
-          {
-            "id": "bobine",
-            "name": "Bobine",
-            "keywords": [
-              "bobine",
-              "creation-vetements"
-            ],
-            "file": "icons/creation-vetements/bobine.svg",
-            "category": "creation-vetements",
-            "author": "Mariia et Noé",
-            "description": ""
-          },
-          {
-            "id": "boutton",
-            "name": "Boutton",
-            "keywords": [
-              "boutton",
-              "creation-vetements"
-            ],
-            "file": "icons/creation-vetements/boutton.svg",
-            "category": "creation-vetements",
-            "author": "Mariia et Noé",
-            "description": ""
-          },
-          {
-            "id": "canette",
-            "name": "Canette",
-            "keywords": [
-              "canette",
-              "creation-vetements"
-            ],
-            "file": "icons/creation-vetements/canette.svg",
-            "category": "creation-vetements",
-            "author": "Mariia et Noé",
-            "description": ""
-          },
-          {
-            "id": "ceintre",
-            "name": "Ceintre",
-            "keywords": [
-              "ceintre",
-              "creation-vetements"
-            ],
-            "file": "icons/creation-vetements/ceintre.svg",
-            "category": "creation-vetements",
-            "author": "Mariia et Noé",
-            "description": ""
-          },
-          {
-            "id": "ciseaux",
-            "name": "Ciseaux",
-            "keywords": [
-              "ciseaux",
-              "creation-vetements"
-            ],
-            "file": "icons/creation-vetements/ciseaux.svg",
-            "category": "creation-vetements",
-            "author": "Mariia et Noé",
-            "description": ""
-          },
-          {
-            "id": "coussin-a-epingle",
-            "name": "Coussin a epingle",
-            "keywords": [
-              "coussin",
-              "epingle",
-              "creation-vetements"
-            ],
-            "file": "icons/creation-vetements/coussin_a_epingle.svg",
-            "category": "creation-vetements",
-            "author": "Mariia et Noé",
-            "description": ""
-          },
-          {
-            "id": "cray",
-            "name": "Cray",
-            "keywords": [
-              "cray",
-              "creation-vetements"
-            ],
-            "file": "icons/creation-vetements/cray.svg",
-            "category": "creation-vetements",
-            "author": "Mariia et Noé",
-            "description": ""
-          },
-          {
-            "id": "fer-a-repasser",
-            "name": "Fer a repasser",
-            "keywords": [
-              "repasser",
-              "fer",
-              "creation-vetements"
-            ],
-            "file": "icons/creation-vetements/fer_a_repasser.svg",
-            "category": "creation-vetements",
-            "author": "Mariia et Noé",
-            "description": ""
-          },
-          {
-            "id": "machine-a-coudre",
-            "name": "Machine a coudre",
-            "keywords": [
-              "machine",
-              "coudre",
-              "creation-vetements"
-            ],
-            "file": "icons/creation-vetements/machine_a_coudre.svg",
-            "category": "creation-vetements",
-            "author": "Mariia et Noé",
-            "description": ""
-          },
-          {
-            "id": "patch",
-            "name": "Patch",
-            "keywords": [
-              "patch",
-              "creation-vetements"
-            ],
-            "file": "icons/creation-vetements/patch.svg",
-            "category": "creation-vetements",
-            "author": "Mariia et Noé",
-            "description": ""
-          },
-          {
-            "id": "pelotte-de-laine",
-            "name": "Pelotte de laine",
-            "keywords": [
-              "pelotte",
-              "laine",
-              "creation-vetements"
-            ],
-            "file": "icons/creation-vetements/pelotte_de_laine.svg",
-            "category": "creation-vetements",
-            "author": "Mariia et Noé",
-            "description": ""
-          },
-          {
-            "id": "pincette",
-            "name": "Pincette",
-            "keywords": [
-              "pincette",
-              "creation-vetements"
-            ],
-            "file": "icons/creation-vetements/pincette.svg",
-            "category": "creation-vetements",
-            "author": "Mariia et Noé",
-            "description": ""
-          },
-          {
-            "id": "regle",
-            "name": "Regle",
-            "keywords": [
-              "regle",
-              "creation-vetements"
-            ],
-            "file": "icons/creation-vetements/regle.svg",
-            "category": "creation-vetements",
-            "author": "Mariia et Noé",
-            "description": ""
-          },
-          {
-            "id": "tour-a-broderie",
-            "name": "Tour a broderie",
-            "keywords": [
-              "tour",
-              "broderie",
-              "creation-vetements"
-            ],
-            "file": "icons/creation-vetements/tour_a_broderie.svg",
-            "category": "creation-vetements",
-            "author": "Mariia et Noé",
-            "description": ""
-          }
-        ]
-      }
-    ]
-  }
+          "name": "Economat 1",
           "keywords": [
             "economat",
             "services"
@@ -1433,6 +1252,185 @@
           "file": "icons/services/salle-impression-2.svg",
           "category": "services",
           "author": "classe ID451",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "id": "creation-vetements",
+      "label": "Création vêtements",
+      "icons": [
+        {
+          "id": "bobine",
+          "name": "Bobine",
+          "keywords": [
+            "bobine",
+            "creation-vetements"
+          ],
+          "file": "icons/creation-vetements/bobine.svg",
+          "category": "creation-vetements",
+          "author": "Mariia et Noé",
+          "description": ""
+        },
+        {
+          "id": "bouton",
+          "name": "Bouton",
+          "keywords": [
+            "bouton",
+            "creation-vetements"
+          ],
+          "file": "icons/creation-vetements/bouton.svg",
+          "category": "creation-vetements",
+          "author": "Mariia et Noé",
+          "description": ""
+        },
+        {
+          "id": "canette",
+          "name": "Canette",
+          "keywords": [
+            "canette",
+            "creation-vetements"
+          ],
+          "file": "icons/creation-vetements/canette.svg",
+          "category": "creation-vetements",
+          "author": "Mariia et Noé",
+          "description": ""
+        },
+        {
+          "id": "ceintre",
+          "name": "Ceintre",
+          "keywords": [
+            "ceintre",
+            "creation-vetements"
+          ],
+          "file": "icons/creation-vetements/ceintre.svg",
+          "category": "creation-vetements",
+          "author": "Mariia et Noé",
+          "description": ""
+        },
+        {
+          "id": "ciseaux",
+          "name": "Ciseaux",
+          "keywords": [
+            "ciseaux",
+            "creation-vetements"
+          ],
+          "file": "icons/creation-vetements/ciseaux.svg",
+          "category": "creation-vetements",
+          "author": "Mariia et Noé",
+          "description": ""
+        },
+        {
+          "id": "coussin-a-epingle",
+          "name": "Coussin à epingle",
+          "keywords": [
+            "coussin",
+            "epingle",
+            "creation-vetements"
+          ],
+          "file": "icons/creation-vetements/coussin_a_epingle.svg",
+          "category": "creation-vetements",
+          "author": "Mariia et Noé",
+          "description": ""
+        },
+        {
+          "id": "cray",
+          "name": "Cray",
+          "keywords": [
+            "cray",
+            "creation-vetements"
+          ],
+          "file": "icons/creation-vetements/cray.svg",
+          "category": "creation-vetements",
+          "author": "Mariia et Noé",
+          "description": ""
+        },
+        {
+          "id": "fer-a-repasser",
+          "name": "Fer à repasser",
+          "keywords": [
+            "repasser",
+            "fer",
+            "creation-vetements"
+          ],
+          "file": "icons/creation-vetements/fer_a_repasser.svg",
+          "category": "creation-vetements",
+          "author": "Mariia et Noé",
+          "description": ""
+        },
+        {
+          "id": "machine-a-coudre",
+          "name": "Machine à coudre",
+          "keywords": [
+            "machine",
+            "coudre",
+            "creation-vetements"
+          ],
+          "file": "icons/creation-vetements/machine_a_coudre.svg",
+          "category": "creation-vetements",
+          "author": "Mariia et Noé",
+          "description": ""
+        },
+        {
+          "id": "patch",
+          "name": "Patch",
+          "keywords": [
+            "patch",
+            "creation-vetements"
+          ],
+          "file": "icons/creation-vetements/patch.svg",
+          "category": "creation-vetements",
+          "author": "Mariia et Noé",
+          "description": ""
+        },
+        {
+          "id": "pelotte-de-laine",
+          "name": "Pelotte de laine",
+          "keywords": [
+            "pelotte",
+            "laine",
+            "creation-vetements"
+          ],
+          "file": "icons/creation-vetements/pelotte_de_laine.svg",
+          "category": "creation-vetements",
+          "author": "Mariia et Noé",
+          "description": ""
+        },
+        {
+          "id": "pincette",
+          "name": "Pincette",
+          "keywords": [
+            "pincette",
+            "creation-vetements"
+          ],
+          "file": "icons/creation-vetements/pincette.svg",
+          "category": "creation-vetements",
+          "author": "Mariia et Noé",
+          "description": ""
+        },
+        {
+          "id": "regle",
+          "name": "Règle",
+          "keywords": [
+            "regle",
+            "creation-vetements"
+          ],
+          "file": "icons/creation-vetements/regle.svg",
+          "category": "creation-vetements",
+          "author": "Mariia et Noé",
+          "description": ""
+        },
+        {
+          "id": "tour-a-broderie",
+          "name": "Tour à broderie",
+          "keywords": [
+            "tour",
+            "broderie",
+            "creation-vetements"
+          ],
+          "file": "icons/creation-vetements/tour_a_broderie.svg",
+          "category": "creation-vetements",
+          "author": "Mariia et Noé",
           "description": ""
         }
       ]
