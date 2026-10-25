@@ -6,6 +6,9 @@
   --color-blue-dark:    #051BCB;
   --color-text-primary: #070707;
   --font-body:          'Epilogue', sans-serif;
+  --info-icon-container-width:  clamp(158px, 34.375vw, 440px);
+  --info-icon-container-height: clamp(149px, 29.6875vw, 380px);
+  --info-icon-size:             clamp(131px, 22.890625vw, 293px);
   --text-xs:   14px;
   --text-sm:   15px;
   --text-base: 19px;
@@ -73,12 +76,12 @@ body {
 .iconlib-nav-link {
   color: #fff;
   text-decoration: none;
-  font-weight: var(--font-bold);
+  font-weight: var(--font-semibold);
   font-size: var(--text-sm);
   display: flex;
   align-items: center;
   padding: 0 var(--spacing-lg);
-  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  border-left: 3px solid #fff;
 }
 
 .iconlib-nav-link:hover,
@@ -91,7 +94,6 @@ body {
   margin-left: auto;
   background: none;
   border: none;
-  border-left: 1px solid rgba(255, 255, 255, 0.3);
   color: #fff;
   cursor: pointer;
   padding: 0 var(--spacing-md);
@@ -124,6 +126,7 @@ body {
   bottom: 0;
   width: 60%;
   background: var(--color-blue);
+  border: 3px solid var(--color-blue-dark);
   z-index: 200;
   display: flex;
   flex-direction: column;
@@ -139,7 +142,7 @@ body {
   font-weight: var(--font-bold);
   font-size: var(--text-base);
   padding: var(--spacing-sm) var(--spacing-md);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 3px solid var(--color-blue-dark);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -153,7 +156,7 @@ body {
 
 /* ── Toolbar ── */
 .iconlib-toolbar {
-  border-bottom: 1px solid var(--color-blue);
+  border-bottom: 2px solid var(--color-blue);
   background: #F5F7FB;
   padding: var(--spacing-md) var(--spacing-lg);
 }
@@ -161,7 +164,7 @@ body {
 .iconlib-toolbar-top {
   display: flex;
   align-items: stretch;
-  border-bottom: 1px solid var(--color-blue);
+  border-bottom: 2px solid var(--color-blue);
   gap: var(--spacing-md);
   padding-bottom: var(--spacing-md);
   margin-bottom: var(--spacing-md);
@@ -171,7 +174,7 @@ body {
   flex: 1;
   display: flex;
   align-items: stretch;
-  border-right: 1px solid var(--color-blue);
+  border-right: 2px solid var(--color-blue);
   min-width: 0;
 }
 
@@ -295,8 +298,8 @@ body {
 .iconlib-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  border-top: 1px solid var(--color-blue);
-  border-left: 1px solid var(--color-blue);
+  border-top: 2px solid var(--color-blue);
+  border-left: 2px solid var(--color-blue);
 }
 
 @media (min-width: 700px) {
@@ -306,8 +309,8 @@ body {
 .iconlib-card {
   background: var(--color-bg-darker);
   border: none;
-  border-right: 1px solid var(--color-blue);
-  border-bottom: 1px solid var(--color-blue);
+  border-right: 2px solid var(--color-blue);
+  border-bottom: 2px solid var(--color-blue);
   border-radius: 0;
   padding: calc(var(--spacing-xl) + 4px);
   display: flex;
@@ -391,7 +394,7 @@ body {
   right: 0;
   bottom: 0;
   background: var(--color-bg-page);
-  border-top: 1px solid var(--color-blue);
+  border-top: 2px solid var(--color-blue);
   z-index: 500;
   overflow-y: auto;
   display: flex;
@@ -405,7 +408,7 @@ body {
     right: 0;
     width: 50%;
     border-top: none;
-    border-left: 1px solid var(--color-blue);
+    border-left: 2px solid var(--color-blue);
   }
 }
 
@@ -459,7 +462,7 @@ body {
 
 /* Modal info rows separated by blue borders */
 .iconlib-modal-row {
-  border-top: 1px solid var(--color-blue);
+  border-top: 2px solid var(--color-blue);
   padding: var(--spacing-sm) var(--spacing-md);
   font-size: var(--text-sm);
   color: var(--color-text-primary);
@@ -479,7 +482,7 @@ body {
 }
 
 .iconlib-modal-slider-row {
-  border-top: 1px solid var(--color-blue);
+  border-top: 2px solid var(--color-blue);
   display: flex;
   align-items: center;
   gap: var(--spacing-sm);
@@ -523,7 +526,7 @@ body {
 }
 
 .iconlib-modal-fallback {
-  border-top: 1px solid var(--color-blue);
+  border-top: 2px solid var(--color-blue);
   padding: var(--spacing-sm) var(--spacing-md);
   display: flex;
   flex-direction: column;
@@ -539,14 +542,14 @@ body {
   min-height: 80px;
   font-family: monospace;
   font-size: var(--text-xs);
-  border: 1px solid var(--color-blue);
+  border: 2px solid var(--color-blue);
   padding: var(--spacing-xs);
   resize: vertical;
   background: #fff;
 }
 
 .iconlib-modal-error {
-  border-top: 1px solid var(--color-blue);
+  border-top: 2px solid var(--color-blue);
   color: #d32f2f;
   padding: var(--spacing-xs) var(--spacing-md);
   font-size: var(--text-sm);
@@ -556,13 +559,13 @@ body {
 .license-page {
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-lg);
 }
 
 .license-hero {
   background: #F5F7FB;
   padding: var(--spacing-2xl) var(--spacing-lg);
-  border: 1px solid rgba(1, 69, 242, 0.12);
+  border: 2px solid var(--color-blue);
+  border-top: 0;
 }
 
 .license-hero-label {
@@ -577,16 +580,17 @@ body {
 .license-grid {
   display: grid;
   gap: 0;
-  border: 1px solid rgba(1, 69, 242, 0.2);
+  border: 2px solid var(--color-blue);
+  border-top: 0;
 }
 
 .license-card {
   display: grid;
-  grid-template-columns: 80px 1fr;
-  gap: var(--spacing-md);
+  grid-template-columns: minmax(0, var(--info-icon-container-width)) minmax(0, 1fr);
+  gap: 0;
   align-items: center;
-  padding: var(--spacing-lg);
-  border-bottom: 1px solid rgba(1, 69, 242, 0.2);
+  padding: 0;
+  border-bottom: 2px solid var(--color-blue);
   background: #F5F7FB;
 }
 
@@ -594,17 +598,27 @@ body {
   border-bottom: none;
 }
 
-.license-card-icon {
-  width: 72px;
-  height: 72px;
+.license-card-icon,
+.about-icon {
+  width: 100%;
+  height: var(--info-icon-container-height);
   display: grid;
   place-items: center;
   color: var(--color-text-primary);
+  background: var(--color-bg-darker);
+  border-right: 2px solid var(--color-blue);
 }
 
-.license-card-icon svg {
-  width: 48px;
-  height: 48px;
+.license-card > div:not(.license-card-icon),
+.about-card > div:not(.about-icon) {
+  padding: var(--spacing-lg);
+}
+
+.license-card-icon img,
+.about-icon img {
+  width: var(--info-icon-size);
+  height: var(--info-icon-size);
+  object-fit: contain;
 }
 
 .license-card h2 {
@@ -622,7 +636,8 @@ body {
 .license-footer {
   background: #F5F7FB;
   padding: var(--spacing-lg);
-  border: 1px solid rgba(1, 69, 242, 0.12);
+  border: 2px solid var(--color-blue);
+  border-top: 0;
   display: flex;
   flex-direction: column;
   gap: var(--spacing-md);
@@ -661,23 +676,24 @@ body {
   height: 60px;
 }
 
-@media (min-width: 700px) {
-  .license-card {
-    grid-template-columns: 100px 1fr;
-  }
+/* ── Utility ── */
+.about-page,
+.license-page {
+  padding: 0;
+  max-width: none;
+  gap: 0;
 }
 
-/* ── Utility ── */
 .about-page {
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-lg);
 }
 
 .about-hero {
   padding: var(--spacing-2xl) var(--spacing-lg);
   background: #F5F7FB;
-  border: 1px solid rgba(1, 69, 242, 0.16);
+  border: 2px solid var(--color-blue);
+  border-top: 0;
 }
 
 .about-hero h1 {
@@ -690,34 +706,22 @@ body {
 .about-grid {
   display: grid;
   gap: 0;
-  border: 1px solid rgba(1, 69, 242, 0.2);
+  border: 2px solid var(--color-blue);
+  border-top: 0;
 }
 
 .about-card {
   display: grid;
-  grid-template-columns: 92px 1fr;
+  grid-template-columns: minmax(0, var(--info-icon-container-width)) minmax(0, 1fr);
   align-items: center;
-  gap: var(--spacing-md);
-  padding: var(--spacing-lg);
-  border-bottom: 1px solid rgba(1, 69, 242, 0.2);
+  gap: 0;
+  padding: 0;
+  border-bottom: 2px solid var(--color-blue);
   background: #F5F7FB;
 }
 
 .about-card:last-child {
   border-bottom: none;
-}
-
-.about-icon {
-  display: grid;
-  place-items: center;
-  width: 72px;
-  height: 72px;
-  color: var(--color-text-primary);
-}
-
-.about-icon svg {
-  width: 40px;
-  height: 40px;
 }
 
 .about-card h2 {
@@ -732,9 +736,27 @@ body {
   line-height: var(--leading-normal);
 }
 
-@media (min-width: 700px) {
-  .about-card {
-    grid-template-columns: 112px 1fr;
+@media (max-width: 699px) {
+  .license-card > div:not(.license-card-icon),
+  .about-card > div:not(.about-icon) {
+    display: contents;
+  }
+
+  .license-card-icon,
+  .about-icon {
+    border-bottom: 2px solid var(--color-blue);
+  }
+
+  .license-card h2,
+  .about-card h2 {
+    margin: 0;
+    padding: var(--spacing-md);
+  }
+
+  .license-card p,
+  .about-card p {
+    grid-column: 1 / -1;
+    padding: var(--spacing-md);
   }
 }
 

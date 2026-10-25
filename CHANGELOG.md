@@ -4,6 +4,18 @@ Tous les changements notables apportés à ce projet seront documentés dans ce 
 
 Le format est basé sur [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), et ce projet respecte le principe du [Versionnage Sémantique](https://semver.org/lang/fr/spec/v2.0.0.html).
 
+## [Unreleased] - 2026-10-25
+
+### Correctifs visuels
+
+Correctifs visuels pour se rapprocher de la maquette:
+
+- Ajustement des bordures de navigation : liens du menu desktop en semi-bold avec séparateurs blancs de 3 px, suppression de la bordure du bouton hamburger, et bordures bleu foncé de 3 px sur le menu mobile.
+- Uniformisation des bordures bleues du site en 2 px.
+- Agrandissement des icônes des pages À propos et Licence avec des dimensions fluides selon la taille de l'écran, un fond gris et une bordure bleue.
+- Mise en page des pages À propos et Licence en pleine largeur, sans espacement entre les sections ni double bordure à leurs jonctions.
+- Suppression du padding des cartes pour aligner les blocs d'icônes sur les bords ; maintien d'un padding intérieur sur les textes.
+
 ## [Unreleased] - 2026-05-13
 
 - Renommage des icônes
