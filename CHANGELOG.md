@@ -16,6 +16,8 @@ Correctifs visuels pour se rapprocher de la maquette:
 - Mise en page des pages À propos et Licence en pleine largeur, sans espacement entre les sections ni double bordure à leurs jonctions.
 - Suppression du padding des cartes pour aligner les blocs d'icônes sur les bords ; maintien d'un padding intérieur sur les textes.
 
+Ces changements ont été effectés avec le modèle *HydraFusion (Research Preview)*, l'actuel modèle par défaut de Copilot, et ont coûté 98 crédits (6% des 1500 crédits mensuels): coût d'environ 1$. HydraFusion analyse la tâche demandée et déploie automatiquement un flux de travail coordonnant plusieurs modèles.
+
 ## [Unreleased] - 2026-05-13
 
 - Renommage des icônes
