@@ -6,6 +6,6 @@ La maquette visuelle a été conçue par Vesa Tufa (ID451) et se trouve [dans ce
 
 ### Les branches
 
-La version présentée avec [Github Pages](https://eracom-id441.github.io/index-picto/) est la branche **copilot** (développée avec l'assistant IA de Github Copilot). 
+La version présentée avec [Github Pages](https://eracom-id451.github.io/index-picto/) est la branche **copilot** (développée avec l'assistant IA de Github Copilot). 
 
 La branche **original** représente le point de départ – les contenus SVG sont là, ainsi que les instructions, mais le site lui-même n'est pas encore codé. Elle peut servir pour des exercices de développement assisté par IA.
