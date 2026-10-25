@@ -15,7 +15,7 @@
           "file": "icons/audiovisuel/animation-1.svg",
           "category": "audiovisuel",
           "author": "classe ID451",
-          "description": ""
+          "description": "Un personnage qui court, symbolisant les techniques d'animation"
         },
         {
           "id": "animation-2",
@@ -27,7 +27,7 @@
           "file": "icons/audiovisuel/animation-2.svg",
           "category": "audiovisuel",
           "author": "classe ID451",
-          "description": ""
+          "description": "Un symbole abstrait qui représente plusieurs images-clé"
         },
         {
           "id": "audio",
@@ -193,7 +193,7 @@
           "file": "icons/graphisme/creativite.svg",
           "category": "graphisme",
           "author": "classe ID451",
-          "description": ""
+          "description": "Une ampoule électrique combinée à un crayon"
         },
         {
           "id": "direction-artistique-plein",
@@ -1002,7 +1002,7 @@
     },
     {
       "id": "batiment",
-      "label": "Batiment",
+      "label": "Bâtiment",
       "icons": [
         {
           "id": "ascenseur",
