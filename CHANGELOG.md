@@ -10,6 +10,7 @@ Le format est basé sur [Keep a Changelog](https://keepachangelog.com/en/1.1.0/)
 
 Correctifs visuels pour se rapprocher de la maquette:
 
+- Sur la page d'accueil, les grilles d'icônes occupent toute la largeur de la fenêtre ; les titres de catégories, les boutons « voir plus » et les messages conservent une marge latérale.
 - Ajustement des bordures de navigation : liens du menu desktop en semi-bold avec séparateurs blancs de 3 px, suppression de la bordure du bouton hamburger, et bordures bleu foncé de 3 px sur le menu mobile.
 - Uniformisation des bordures bleues du site en 2 px.
 - Agrandissement des icônes des pages À propos et Licence avec des dimensions fluides selon la taille de l'écran, un fond gris et une bordure bleue.
