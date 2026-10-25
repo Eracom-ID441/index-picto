@@ -1,6 +1,47 @@
-<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect x="0.167509" y="0.167509" width="23.665" height="23.665" stroke="black" stroke-width="0.335018"/>
-<path d="M12.1494 6.24829L2.58325 9.39506L12.1494 12.5418L21.4639 9.39506L12.1494 6.24829Z" fill="black"/>
-<path d="M5.85596 15.4939V11.1536L12.1495 13.2514L18.443 11.1536V15.4939C16.3452 18.0982 7.9538 18.0982 5.85596 15.4939Z" fill="black"/>
-<path d="M19.9533 10.6501L20.4568 10.4658V12.1605L20.7085 12.5187V13.235H19.7015V12.5187L19.9533 12.1605V10.6501Z" fill="black"/>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="24"
+   height="24"
+   viewBox="0 0 24 24"
+   fill="none"
+   version="1.1"
+   id="svg3"
+   sodipodi:docname="salle-des-profs.svg"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs3" />
+  <sodipodi:namedview
+     id="namedview3"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="9.8333333"
+     inkscape:cx="12"
+     inkscape:cy="11.949153"
+     inkscape:window-width="1528"
+     inkscape:window-height="880"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg3" />
+  <path
+     d="M12.1494 6.24829L2.58325 9.39506L12.1494 12.5418L21.4639 9.39506L12.1494 6.24829Z"
+     fill="black"
+     id="path1" />
+  <path
+     d="M5.85596 15.4939V11.1536L12.1495 13.2514L18.443 11.1536V15.4939C16.3452 18.0982 7.9538 18.0982 5.85596 15.4939Z"
+     fill="black"
+     id="path2" />
+  <path
+     d="M19.9533 10.6501L20.4568 10.4658V12.1605L20.7085 12.5187V13.235H19.7015V12.5187L19.9533 12.1605V10.6501Z"
+     fill="black"
+     id="path3" />
 </svg>
