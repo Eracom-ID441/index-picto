@@ -1,8 +1,55 @@
-<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M13.212 14.4V16.158H8.41198V14.4H13.212ZM14.412 13.2H7.21198V17.358H14.412V13.2Z" fill="black"/>
-<path d="M6.61199 13.2H5.41199V17.454H6.61199V13.2Z" fill="black"/>
-<path d="M19.812 15.282L15.012 13.2V17.358L19.812 15.282Z" fill="black"/>
-<path d="M19.926 7.25398L15.126 5.17798V9.32998L19.926 7.25398Z" fill="black"/>
-<path d="M15.558 6.05396H5.35797V8.45396H15.558V6.05396Z" fill="black"/>
-<path d="M18.24 17.358V12.306" stroke="white" stroke-width="1.25" stroke-miterlimit="10"/>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="24"
+   height="24"
+   viewBox="0 0 24 24"
+   fill="none"
+   version="1.1"
+   id="svg6"
+   sodipodi:docname="direction-artistique-vide.svg"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs6" />
+  <sodipodi:namedview
+     id="namedview6"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="9.8333333"
+     inkscape:cx="12"
+     inkscape:cy="12"
+     inkscape:window-width="1312"
+     inkscape:window-height="449"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg6" />
+  <path
+     d="M13.212 14.4V16.158H8.41198V14.4H13.212ZM14.412 13.2H7.21198V17.358H14.412V13.2Z"
+     fill="black"
+     id="path1" />
+  <path
+     d="M6.61199 13.2H5.41199V17.454H6.61199V13.2Z"
+     fill="black"
+     id="path2" />
+  <path
+     d="M19.812 15.282L15.012 13.2V17.358L19.812 15.282Z"
+     fill="black"
+     id="path3" />
+  <path
+     d="M19.926 7.25398L15.126 5.17798V9.32998L19.926 7.25398Z"
+     fill="black"
+     id="path4" />
+  <path
+     d="M15.558 6.05396H5.35797V8.45396H15.558V6.05396Z"
+     fill="black"
+     id="path5" />
 </svg>
