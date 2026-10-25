@@ -4,6 +4,10 @@ Tous les changements notables apportés à ce projet seront documentés dans ce 
 
 Le format est basé sur [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), et ce projet respecte le principe du [Versionnage Sémantique](https://semver.org/lang/fr/spec/v2.0.0.html).
 
+## Version 1.3.0 - 2026-10-25
+
+Améliorations dans la fenêtre modale. Ajout de la classe en plus du nom, suppression de l'ID qui n'apporte pas d'info utile.
+
 ## Version 1.2.0 - 2026-10-25
 
 ### Correctifs visuels

@@ -15,6 +15,7 @@
           "file": "icons/audiovisuel/animation-1.svg",
           "category": "audiovisuel",
           "author": "classe ID451",
+          "class": "ID451",
           "description": "Un personnage qui court, symbolisant les techniques d'animation"
         },
         {
@@ -27,6 +28,7 @@
           "file": "icons/audiovisuel/animation-2.svg",
           "category": "audiovisuel",
           "author": "classe ID451",
+          "class": "ID451",
           "description": "Un symbole abstrait qui représente plusieurs images-clé"
         },
         {
@@ -39,6 +41,7 @@
           "file": "icons/audiovisuel/audio.svg",
           "category": "audiovisuel",
           "author": "classe ID451",
+          "class": "ID451",
           "description": ""
         },
         {
@@ -51,6 +54,7 @@
           "file": "icons/audiovisuel/camera-1.svg",
           "category": "audiovisuel",
           "author": "classe ID451",
+          "class": "ID451",
           "description": ""
         },
         {
@@ -63,6 +67,7 @@
           "file": "icons/audiovisuel/camera-2.svg",
           "category": "audiovisuel",
           "author": "classe ID451",
+          "class": "ID451",
           "description": ""
         },
         {
@@ -75,6 +80,7 @@
           "file": "icons/audiovisuel/film.svg",
           "category": "audiovisuel",
           "author": "classe ID451",
+          "class": "ID451",
           "description": ""
         },
         {
@@ -87,6 +93,7 @@
           "file": "icons/audiovisuel/micro.svg",
           "category": "audiovisuel",
           "author": "classe ID451",
+          "class": "ID451",
           "description": ""
         },
         {
@@ -99,6 +106,7 @@
           "file": "icons/audiovisuel/mix.svg",
           "category": "audiovisuel",
           "author": "classe ID451",
+          "class": "ID451",
           "description": ""
         },
         {
@@ -111,6 +119,7 @@
           "file": "icons/audiovisuel/son.svg",
           "category": "audiovisuel",
           "author": "classe ID451",
+          "class": "ID451",
           "description": ""
         },
         {
@@ -124,6 +133,7 @@
           "file": "icons/audiovisuel/studio-son-1.svg",
           "category": "audiovisuel",
           "author": "classe ID451",
+          "class": "ID451",
           "description": ""
         },
         {
@@ -137,6 +147,7 @@
           "file": "icons/audiovisuel/studio-son-2.svg",
           "category": "audiovisuel",
           "author": "classe ID451",
+          "class": "ID451",
           "description": ""
         },
         {
@@ -149,6 +160,7 @@
           "file": "icons/audiovisuel/tournage.svg",
           "category": "audiovisuel",
           "author": "classe ID451",
+          "class": "ID451",
           "description": ""
         }
       ]
@@ -168,6 +180,7 @@
           "file": "icons/graphisme/carton-plein.svg",
           "category": "graphisme",
           "author": "classe ID451",
+          "class": "ID451",
           "description": ""
         },
         {
@@ -181,6 +194,7 @@
           "file": "icons/graphisme/carton-vide.svg",
           "category": "graphisme",
           "author": "classe ID451",
+          "class": "ID451",
           "description": ""
         },
         {
@@ -193,6 +207,7 @@
           "file": "icons/graphisme/creativite.svg",
           "category": "graphisme",
           "author": "classe ID451",
+          "class": "ID451",
           "description": "Une ampoule électrique combinée à un crayon"
         },
         {
@@ -207,6 +222,7 @@
           "file": "icons/graphisme/direction-artistique-plein.svg",
           "category": "graphisme",
           "author": "classe ID451",
+          "class": "ID451",
           "description": ""
         },
         {
@@ -221,6 +237,7 @@
           "file": "icons/graphisme/direction-artistique-vide.svg",
           "category": "graphisme",
           "author": "classe ID451",
+          "class": "ID451",
           "description": ""
         },
         {
@@ -233,6 +250,7 @@
           "file": "icons/graphisme/document.svg",
           "category": "graphisme",
           "author": "classe ID451",
+          "class": "ID451",
           "description": ""
         },
         {
@@ -245,6 +263,7 @@
           "file": "icons/graphisme/flyer.svg",
           "category": "graphisme",
           "author": "classe ID451",
+          "class": "ID451",
           "description": ""
         },
         {
@@ -257,6 +276,7 @@
           "file": "icons/graphisme/graisses.svg",
           "category": "graphisme",
           "author": "classe ID451",
+          "class": "ID451",
           "description": ""
         },
         {
@@ -270,6 +290,7 @@
           "file": "icons/graphisme/illustration-plein.svg",
           "category": "graphisme",
           "author": "classe ID451",
+          "class": "ID451",
           "description": ""
         },
         {
@@ -283,6 +304,7 @@
           "file": "icons/graphisme/illustration-vide.svg",
           "category": "graphisme",
           "author": "classe ID451",
+          "class": "ID451",
           "description": ""
         },
         {
@@ -295,6 +317,7 @@
           "file": "icons/graphisme/italics.svg",
           "category": "graphisme",
           "author": "classe ID451",
+          "class": "ID451",
           "description": ""
         },
         {
@@ -307,6 +330,7 @@
           "file": "icons/graphisme/journal.svg",
           "category": "graphisme",
           "author": "classe ID451",
+          "class": "ID451",
           "description": ""
         },
         {
@@ -320,6 +344,7 @@
           "file": "icons/graphisme/livre-plein.svg",
           "category": "graphisme",
           "author": "classe ID451",
+          "class": "ID451",
           "description": ""
         },
         {
@@ -333,6 +358,7 @@
           "file": "icons/graphisme/livre-vide.svg",
           "category": "graphisme",
           "author": "classe ID451",
+          "class": "ID451",
           "description": ""
         },
         {
@@ -345,6 +371,7 @@
           "file": "icons/graphisme/logo-1.svg",
           "category": "graphisme",
           "author": "classe ID451",
+          "class": "ID451",
           "description": ""
         },
         {
@@ -357,6 +384,7 @@
           "file": "icons/graphisme/logo-2.svg",
           "category": "graphisme",
           "author": "classe ID451",
+          "class": "ID451",
           "description": ""
         },
         {
@@ -369,6 +397,7 @@
           "file": "icons/graphisme/logo-3.svg",
           "category": "graphisme",
           "author": "classe ID451",
+          "class": "ID451",
           "description": ""
         },
         {
@@ -382,6 +411,7 @@
           "file": "icons/graphisme/maj-minuscule.svg",
           "category": "graphisme",
           "author": "classe ID451",
+          "class": "ID451",
           "description": ""
         },
         {
@@ -395,6 +425,7 @@
           "file": "icons/graphisme/mise-en-page-1.svg",
           "category": "graphisme",
           "author": "classe ID451",
+          "class": "ID451",
           "description": ""
         },
         {
@@ -408,6 +439,7 @@
           "file": "icons/graphisme/mise-en-page-2.svg",
           "category": "graphisme",
           "author": "classe ID451",
+          "class": "ID451",
           "description": ""
         },
         {
@@ -421,6 +453,7 @@
           "file": "icons/graphisme/mise-en-page-3.svg",
           "category": "graphisme",
           "author": "classe ID451",
+          "class": "ID451",
           "description": ""
         },
         {
@@ -434,6 +467,7 @@
           "file": "icons/graphisme/presentation-plein.svg",
           "category": "graphisme",
           "author": "classe ID451",
+          "class": "ID451",
           "description": ""
         },
         {
@@ -447,6 +481,7 @@
           "file": "icons/graphisme/presentation-vide.svg",
           "category": "graphisme",
           "author": "classe ID451",
+          "class": "ID451",
           "description": ""
         },
         {
@@ -460,6 +495,7 @@
           "file": "icons/graphisme/sans-serif.svg",
           "category": "graphisme",
           "author": "classe ID451",
+          "class": "ID451",
           "description": ""
         },
         {
@@ -472,6 +508,7 @@
           "file": "icons/graphisme/serif.svg",
           "category": "graphisme",
           "author": "classe ID451",
+          "class": "ID451",
           "description": ""
         },
         {
@@ -484,6 +521,7 @@
           "file": "icons/graphisme/signaletique.svg",
           "category": "graphisme",
           "author": "classe ID451",
+          "class": "ID451",
           "description": ""
         },
         {
@@ -496,6 +534,7 @@
           "file": "icons/graphisme/typographie.svg",
           "category": "graphisme",
           "author": "classe ID451",
+          "class": "ID451",
           "description": ""
         },
         {
@@ -508,6 +547,7 @@
           "file": "icons/graphisme/underline.svg",
           "category": "graphisme",
           "author": "classe ID451",
+          "class": "ID451",
           "description": ""
         }
       ]
@@ -527,6 +567,7 @@
           "file": "icons/photo/appareil-photo-blanc.svg",
           "category": "photo",
           "author": "classe ID451",
+          "class": "ID451",
           "description": ""
         },
         {
@@ -540,6 +581,7 @@
           "file": "icons/photo/appareil-photo-noir.svg",
           "category": "photo",
           "author": "classe ID451",
+          "class": "ID451",
           "description": ""
         },
         {
@@ -553,6 +595,7 @@
           "file": "icons/photo/carte-sd-blanc.svg",
           "category": "photo",
           "author": "classe ID451",
+          "class": "ID451",
           "description": ""
         },
         {
@@ -565,6 +608,7 @@
           "file": "icons/photo/carte-sd-noir.svg",
           "category": "photo",
           "author": "classe ID451",
+          "class": "ID451",
           "description": ""
         },
         {
@@ -577,6 +621,7 @@
           "file": "icons/photo/flash-blanc.svg",
           "category": "photo",
           "author": "classe ID451",
+          "class": "ID451",
           "description": ""
         },
         {
@@ -589,6 +634,7 @@
           "file": "icons/photo/flash-noir.svg",
           "category": "photo",
           "author": "classe ID451",
+          "class": "ID451",
           "description": ""
         },
         {
@@ -601,6 +647,7 @@
           "file": "icons/photo/galerie-blanc.svg",
           "category": "photo",
           "author": "classe ID451",
+          "class": "ID451",
           "description": ""
         },
         {
@@ -613,6 +660,7 @@
           "file": "icons/photo/galerie-noir.svg",
           "category": "photo",
           "author": "classe ID451",
+          "class": "ID451",
           "description": ""
         },
         {
@@ -625,6 +673,7 @@
           "file": "icons/photo/objectif-blanc.svg",
           "category": "photo",
           "author": "classe ID451",
+          "class": "ID451",
           "description": ""
         },
         {
@@ -637,6 +686,7 @@
           "file": "icons/photo/objectif-noir.svg",
           "category": "photo",
           "author": "classe ID451",
+          "class": "ID451",
           "description": ""
         },
         {
@@ -650,6 +700,7 @@
           "file": "icons/photo/studio-photo-blanc.svg",
           "category": "photo",
           "author": "classe ID451",
+          "class": "ID451",
           "description": ""
         },
         {
@@ -663,6 +714,7 @@
           "file": "icons/photo/studio-photo-noir.svg",
           "category": "photo",
           "author": "classe ID451",
+          "class": "ID451",
           "description": ""
         }
       ]
@@ -681,6 +733,7 @@
           "file": "icons/web/avatar.svg",
           "category": "web",
           "author": "classe ID451",
+          "class": "ID451",
           "description": ""
         },
         {
@@ -693,6 +746,7 @@
           "file": "icons/web/bookmark.svg",
           "category": "web",
           "author": "classe ID451",
+          "class": "ID451",
           "description": ""
         },
         {
@@ -705,6 +759,7 @@
           "file": "icons/web/click.svg",
           "category": "web",
           "author": "classe ID451",
+          "class": "ID451",
           "description": ""
         },
         {
@@ -717,6 +772,7 @@
           "file": "icons/web/enveloppe.svg",
           "category": "web",
           "author": "classe ID451",
+          "class": "ID451",
           "description": ""
         },
         {
@@ -729,6 +785,7 @@
           "file": "icons/web/loading.svg",
           "category": "web",
           "author": "classe ID451",
+          "class": "ID451",
           "description": ""
         },
         {
@@ -741,6 +798,7 @@
           "file": "icons/web/securite.svg",
           "category": "web",
           "author": "classe ID451",
+          "class": "ID451",
           "description": ""
         },
         {
@@ -754,6 +812,7 @@
           "file": "icons/web/telephone.svg",
           "category": "web",
           "author": "classe ID451",
+          "class": "ID451",
           "description": ""
         },
         {
@@ -766,6 +825,7 @@
           "file": "icons/web/web.svg",
           "category": "web",
           "author": "classe ID451",
+          "class": "ID451",
           "description": ""
         }
       ]
@@ -784,6 +844,7 @@
           "file": "icons/game-design/3d.svg",
           "category": "game-design",
           "author": "classe ID451",
+          "class": "ID451",
           "description": ""
         },
         {
@@ -796,6 +857,7 @@
           "file": "icons/game-design/arrow.svg",
           "category": "game-design",
           "author": "classe ID451",
+          "class": "ID451",
           "description": ""
         },
         {
@@ -808,6 +870,7 @@
           "file": "icons/game-design/arrows.svg",
           "category": "game-design",
           "author": "classe ID451",
+          "class": "ID451",
           "description": ""
         },
         {
@@ -820,6 +883,7 @@
           "file": "icons/game-design/buttons.svg",
           "category": "game-design",
           "author": "classe ID451",
+          "class": "ID451",
           "description": ""
         },
         {
@@ -832,6 +896,7 @@
           "file": "icons/game-design/controller.svg",
           "category": "game-design",
           "author": "classe ID451",
+          "class": "ID451",
           "description": ""
         },
         {
@@ -844,6 +909,7 @@
           "file": "icons/game-design/cube.svg",
           "category": "game-design",
           "author": "classe ID451",
+          "class": "ID451",
           "description": ""
         },
         {
@@ -856,6 +922,7 @@
           "file": "icons/game-design/ghost.svg",
           "category": "game-design",
           "author": "classe ID451",
+          "class": "ID451",
           "description": ""
         },
         {
@@ -868,6 +935,7 @@
           "file": "icons/game-design/imd.svg",
           "category": "game-design",
           "author": "classe ID451",
+          "class": "ID451",
           "description": ""
         },
         {
@@ -880,6 +948,7 @@
           "file": "icons/game-design/joystick.svg",
           "category": "game-design",
           "author": "classe ID451",
+          "class": "ID451",
           "description": ""
         },
         {
@@ -892,6 +961,7 @@
           "file": "icons/game-design/pacman.svg",
           "category": "game-design",
           "author": "classe ID451",
+          "class": "ID451",
           "description": ""
         },
         {
@@ -904,6 +974,7 @@
           "file": "icons/game-design/point.svg",
           "category": "game-design",
           "author": "classe ID451",
+          "class": "ID451",
           "description": ""
         },
         {
@@ -916,6 +987,7 @@
           "file": "icons/game-design/ps.svg",
           "category": "game-design",
           "author": "classe ID451",
+          "class": "ID451",
           "description": ""
         },
         {
@@ -928,6 +1000,7 @@
           "file": "icons/game-design/ps4.svg",
           "category": "game-design",
           "author": "classe ID451",
+          "class": "ID451",
           "description": ""
         },
         {
@@ -940,6 +1013,7 @@
           "file": "icons/game-design/waves.svg",
           "category": "game-design",
           "author": "classe ID451",
+          "class": "ID451",
           "description": ""
         }
       ]
@@ -959,6 +1033,7 @@
           "file": "icons/administration/bureau-directeur.svg",
           "category": "administration",
           "author": "classe ID451",
+          "class": "ID451",
           "description": ""
         },
         {
@@ -972,6 +1047,7 @@
           "file": "icons/administration/bureau-doyens.svg",
           "category": "administration",
           "author": "classe ID451",
+          "class": "ID451",
           "description": ""
         },
         {
@@ -984,6 +1060,7 @@
           "file": "icons/administration/rh.svg",
           "category": "administration",
           "author": "classe ID451",
+          "class": "ID451",
           "description": ""
         },
         {
@@ -996,6 +1073,7 @@
           "file": "icons/administration/secreteriat.svg",
           "category": "administration",
           "author": "classe ID451",
+          "class": "ID451",
           "description": ""
         }
       ]
@@ -1014,6 +1092,7 @@
           "file": "icons/batiment/ascenseur.svg",
           "category": "batiment",
           "author": "classe ID451",
+          "class": "ID451",
           "description": ""
         },
         {
@@ -1026,6 +1105,7 @@
           "file": "icons/batiment/cafeteria.svg",
           "category": "batiment",
           "author": "classe ID451",
+          "class": "ID451",
           "description": ""
         },
         {
@@ -1038,6 +1118,7 @@
           "file": "icons/batiment/cafeteria2.svg",
           "category": "batiment",
           "author": "classe ID451",
+          "class": "ID451",
           "description": ""
         },
         {
@@ -1050,6 +1131,7 @@
           "file": "icons/batiment/infirmerie.svg",
           "category": "batiment",
           "author": "classe ID451",
+          "class": "ID451",
           "description": ""
         },
         {
@@ -1063,6 +1145,7 @@
           "file": "icons/batiment/salle-des-profs.svg",
           "category": "batiment",
           "author": "classe ID451",
+          "class": "ID451",
           "description": ""
         },
         {
@@ -1076,6 +1159,7 @@
           "file": "icons/batiment/salle-reunion.svg",
           "category": "batiment",
           "author": "classe ID451",
+          "class": "ID451",
           "description": ""
         },
         {
@@ -1088,6 +1172,7 @@
           "file": "icons/batiment/toilettes.svg",
           "category": "batiment",
           "author": "classe ID451",
+          "class": "ID451",
           "description": ""
         }
       ]
@@ -1106,6 +1191,7 @@
           "file": "icons/services/economat-1.svg",
           "category": "services",
           "author": "classe ID451",
+          "class": "ID451",
           "description": ""
         },
         {
@@ -1118,6 +1204,7 @@
           "file": "icons/services/economat-2.svg",
           "category": "services",
           "author": "classe ID451",
+          "class": "ID451",
           "description": ""
         },
         {
@@ -1131,6 +1218,7 @@
           "file": "icons/services/helpdesk-1-blanc.svg",
           "category": "services",
           "author": "classe ID451",
+          "class": "ID451",
           "description": ""
         },
         {
@@ -1144,6 +1232,7 @@
           "file": "icons/services/helpdesk-1-noir.svg",
           "category": "services",
           "author": "classe ID451",
+          "class": "ID451",
           "description": ""
         },
         {
@@ -1157,6 +1246,7 @@
           "file": "icons/services/helpdesk-2-blanc.svg",
           "category": "services",
           "author": "classe ID451",
+          "class": "ID451",
           "description": ""
         },
         {
@@ -1170,6 +1260,7 @@
           "file": "icons/services/helpdesk-2-noir.svg",
           "category": "services",
           "author": "classe ID451",
+          "class": "ID451",
           "description": ""
         },
         {
@@ -1184,6 +1275,7 @@
           "file": "icons/services/pret-materiel-1-blanc.svg",
           "category": "services",
           "author": "classe ID451",
+          "class": "ID451",
           "description": ""
         },
         {
@@ -1198,6 +1290,7 @@
           "file": "icons/services/pret-materiel-1-noir.svg",
           "category": "services",
           "author": "classe ID451",
+          "class": "ID451",
           "description": ""
         },
         {
@@ -1212,6 +1305,7 @@
           "file": "icons/services/pret-materiel-2-blanc.svg",
           "category": "services",
           "author": "classe ID451",
+          "class": "ID451",
           "description": ""
         },
         {
@@ -1226,6 +1320,7 @@
           "file": "icons/services/pret-materiel-2-noir.svg",
           "category": "services",
           "author": "classe ID451",
+          "class": "ID451",
           "description": ""
         },
         {
@@ -1239,6 +1334,7 @@
           "file": "icons/services/salle-impression-1.svg",
           "category": "services",
           "author": "classe ID451",
+          "class": "ID451",
           "description": ""
         },
         {
@@ -1252,6 +1348,7 @@
           "file": "icons/services/salle-impression-2.svg",
           "category": "services",
           "author": "classe ID451",
+          "class": "ID451",
           "description": ""
         }
       ]
@@ -1270,6 +1367,7 @@
           "file": "icons/creation-vetements/bobine.svg",
           "category": "creation-vetements",
           "author": "Mariia et Noé",
+          "class": "ID451",
           "description": ""
         },
         {
@@ -1282,6 +1380,7 @@
           "file": "icons/creation-vetements/bouton.svg",
           "category": "creation-vetements",
           "author": "Mariia et Noé",
+          "class": "ID451",
           "description": ""
         },
         {
@@ -1294,6 +1393,7 @@
           "file": "icons/creation-vetements/canette.svg",
           "category": "creation-vetements",
           "author": "Mariia et Noé",
+          "class": "ID451",
           "description": ""
         },
         {
@@ -1306,6 +1406,7 @@
           "file": "icons/creation-vetements/ceintre.svg",
           "category": "creation-vetements",
           "author": "Mariia et Noé",
+          "class": "ID451",
           "description": ""
         },
         {
@@ -1318,6 +1419,7 @@
           "file": "icons/creation-vetements/ciseaux.svg",
           "category": "creation-vetements",
           "author": "Mariia et Noé",
+          "class": "ID451",
           "description": ""
         },
         {
@@ -1331,6 +1433,7 @@
           "file": "icons/creation-vetements/coussin_a_epingle.svg",
           "category": "creation-vetements",
           "author": "Mariia et Noé",
+          "class": "ID451",
           "description": ""
         },
         {
@@ -1343,6 +1446,7 @@
           "file": "icons/creation-vetements/cray.svg",
           "category": "creation-vetements",
           "author": "Mariia et Noé",
+          "class": "ID451",
           "description": ""
         },
         {
@@ -1356,6 +1460,7 @@
           "file": "icons/creation-vetements/fer_a_repasser.svg",
           "category": "creation-vetements",
           "author": "Mariia et Noé",
+          "class": "ID451",
           "description": ""
         },
         {
@@ -1369,6 +1474,7 @@
           "file": "icons/creation-vetements/machine_a_coudre.svg",
           "category": "creation-vetements",
           "author": "Mariia et Noé",
+          "class": "ID451",
           "description": ""
         },
         {
@@ -1381,6 +1487,7 @@
           "file": "icons/creation-vetements/patch.svg",
           "category": "creation-vetements",
           "author": "Mariia et Noé",
+          "class": "ID451",
           "description": ""
         },
         {
@@ -1394,6 +1501,7 @@
           "file": "icons/creation-vetements/pelotte_de_laine.svg",
           "category": "creation-vetements",
           "author": "Mariia et Noé",
+          "class": "ID451",
           "description": ""
         },
         {
@@ -1406,6 +1514,7 @@
           "file": "icons/creation-vetements/pincette.svg",
           "category": "creation-vetements",
           "author": "Mariia et Noé",
+          "class": "ID451",
           "description": ""
         },
         {
@@ -1418,6 +1527,7 @@
           "file": "icons/creation-vetements/regle.svg",
           "category": "creation-vetements",
           "author": "Mariia et Noé",
+          "class": "ID451",
           "description": ""
         },
         {
@@ -1431,6 +1541,7 @@
           "file": "icons/creation-vetements/tour_a_broderie.svg",
           "category": "creation-vetements",
           "author": "Mariia et Noé",
+          "class": "ID451",
           "description": ""
         }
       ]

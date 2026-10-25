@@ -182,6 +182,7 @@ Deux chemins doivent mener à cette vue:
           "file": "string",
           "category": "string",
           "author": "classe ID451",
+          "class": "ID451",
           "description": ""
         }
       ]

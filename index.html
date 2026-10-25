@@ -163,14 +163,16 @@
         <!-- Author -->
         <template x-if="modalIcon.author">
           <div class="iconlib-modal-row">
-            <span x-text="modalIcon.author"></span>
+            <span x-text="'Auteur\u202F: ' + modalIcon.author"></span>
           </div>
         </template>
 
-        <!-- ID -->
-        <div class="iconlib-modal-row">
-          <span x-text="modalIcon.id"></span>
-        </div>
+        <!-- Class -->
+        <template x-if="modalIcon.class">
+          <div class="iconlib-modal-row">
+            <span x-text="'Classe\u202F: ' + modalIcon.class"></span>
+          </div>
+        </template>
 
         <!-- Description -->
         <template x-if="modalIcon.description">
