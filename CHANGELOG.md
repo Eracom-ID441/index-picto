@@ -4,26 +4,26 @@ Tous les changements notables apportés à ce projet seront documentés dans ce 
 
 Le format est basé sur [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), et ce projet respecte le principe du [Versionnage Sémantique](https://semver.org/lang/fr/spec/v2.0.0.html).
 
-## [Unreleased] - 2026-10-25
+## Version 1.2.0 - 2026-10-25
 
 ### Correctifs visuels
 
 Correctifs visuels pour se rapprocher de la maquette:
 
 - Sur la page d'accueil, les grilles d'icônes occupent toute la largeur de la fenêtre ; les titres de catégories, les boutons « voir plus » et les messages conservent une marge latérale.
-- Ajustement des bordures de navigation : liens du menu desktop en semi-bold avec séparateurs blancs de 3 px, suppression de la bordure du bouton hamburger, et bordures bleu foncé de 3 px sur le menu mobile.
+- On affiche le nombre d'icônes par catégorie
+- Amélioration de la fenêtre modale.
 - Uniformisation des bordures bleues du site en 2 px.
-- Agrandissement des icônes des pages À propos et Licence avec des dimensions fluides selon la taille de l'écran, un fond gris et une bordure bleue.
-- Mise en page des pages À propos et Licence en pleine largeur, sans espacement entre les sections ni double bordure à leurs jonctions.
-- Suppression du padding des cartes pour aligner les blocs d'icônes sur les bords ; maintien d'un padding intérieur sur les textes.
+- Agrandissement des icônes des pages À propos et Licence avec des dimensions fluides selon la taille de l'écran.
+- Mise en page en pleine largeur, sans espacement.
 
-Ces changements ont été effectés avec le modèle *HydraFusion (Research Preview)*, l'actuel modèle par défaut de Copilot, et ont coûté 98 crédits (6% des 1500 crédits mensuels): coût d'environ 1$. HydraFusion analyse la tâche demandée et déploie automatiquement un flux de travail coordonnant plusieurs modèles.
+Ces changements ont été effectés avec le modèle *HydraFusion (Research Preview)*, l'actuel modèle par défaut de Copilot, et ont coûté 375 crédits (31% des 1500 crédits mensuels).
 
 ### Comportement
 
 - Le filtre par catégorie affiche désormais toutes les icônes de la catégorie sélectionnée ; le lien « voir plus » est masqué pendant ce filtrage.
 
-## [Unreleased] - 2026-05-13
+## Version 1.1.0 - 2026-05-13
 
 - Renommage des icônes
 
@@ -57,7 +57,7 @@ Résultat :
 - remplacer plusieurs `---` consécutifs par un seul `-`
 - évite les noms de fichiers se terminant par `-.svg`
 
-##  [Unreleased] - 2026-05-19
+##  Version 1.0.0 - 2026-05-19
 
 Tentative durant le cours, avec Copilot Free. L'agent pose des questions, progresse... mais le résultat ne donne rien de concluant.
 

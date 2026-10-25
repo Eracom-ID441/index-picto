@@ -9,6 +9,7 @@ window.iconGallery = function iconGallery() {
     modalSvg: '',
     modalError: '',
     copied: false,
+    downloaded: false,
     copyFallback: false,
     lastFocused: null,
     iconSize: 64,
@@ -81,6 +82,7 @@ window.iconGallery = function iconGallery() {
       this.modalSvg = '';
       this.modalError = '';
       this.copied = false;
+      this.downloaded = false;
       this.copyFallback = false;
       this.lastFocused = document.activeElement;
       fetch(icon.file)
@@ -99,8 +101,13 @@ window.iconGallery = function iconGallery() {
       this.modalSvg = '';
       this.modalError = '';
       this.copied = false;
+      this.downloaded = false;
       this.copyFallback = false;
       if (this.lastFocused) this.lastFocused.focus();
+    },
+    markDownloaded() {
+      this.downloaded = true;
+      setTimeout(() => { this.downloaded = false; }, 2000);
     },
     async copySvg() {
       if (!this.modalSvg) return;

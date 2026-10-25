@@ -146,16 +146,19 @@
     :aria-label="modalIcon ? modalIcon.name : 'Détail icône'"
     @keydown.escape.window="closeModal"
   >
-    <button class="iconlib-modal-close" @click="closeModal" aria-label="Fermer">✕</button>
     <template x-if="modalIcon">
       <div>
-        <!-- Icon preview — always via img, SVG is fetched separately for copy -->
-        <div class="iconlib-modal-preview">
-          <img :src="modalIcon.file" :alt="modalIcon.name">
-        </div>
+        <!-- Square block (1:1): close button, icon preview and name -->
+        <div class="iconlib-modal-stage">
+          <button class="iconlib-modal-close" @click="closeModal" aria-label="Fermer">✕</button>
 
-        <!-- Name -->
-        <h3 class="iconlib-modal-name" x-text="modalIcon.name"></h3>
+          <!-- Icon preview — always via img, SVG is fetched separately for copy -->
+          <div class="iconlib-modal-preview">
+            <img :src="modalIcon.file" :alt="modalIcon.name">
+          </div>
+
+          <h3 class="iconlib-modal-name" x-text="modalIcon.name"></h3>
+        </div>
 
         <!-- Author -->
         <template x-if="modalIcon.author">
@@ -178,13 +181,14 @@
 
         <!-- Download -->
         <div class="iconlib-modal-row iconlib-modal-row-action">
-          <a class="iconlib-modal-download" :href="modalIcon.file" :download="modalIcon.name + '.svg'">Télécharger SVG</a>
-          <span aria-hidden="true">↓</span>
+          <a class="iconlib-modal-download" :href="modalIcon.file" :download="modalIcon.name + '.svg'" @click="markDownloaded()">Télécharger SVG</a>
+          <img class="iconlib-modal-action-icon" :src="downloaded ? 'assets/file_download_done.svg' : 'assets/file_download.svg'" alt="" aria-hidden="true">
         </div>
 
         <!-- Copy -->
-        <div class="iconlib-modal-row iconlib-modal-row-action" @click="copySvg()">
-          <button class="iconlib-modal-copy-btn" x-text="copied ? '✓ Copié !' : 'Copier SVG'"></button>
+        <div class="iconlib-modal-row iconlib-modal-row-action iconlib-modal-row-last" @click="copySvg()">
+          <button class="iconlib-modal-copy-btn" x-text="copied ? 'Copié !' : 'Copier SVG'"></button>
+          <img class="iconlib-modal-action-icon" :src="copied ? 'assets/done.svg' : 'assets/content_copy.svg'" alt="" aria-hidden="true">
         </div>
 
         <!-- Fallback textarea -->
