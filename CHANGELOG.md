@@ -18,6 +18,10 @@ Correctifs visuels pour se rapprocher de la maquette:
 
 Ces changements ont été effectés avec le modèle *HydraFusion (Research Preview)*, l'actuel modèle par défaut de Copilot, et ont coûté 98 crédits (6% des 1500 crédits mensuels): coût d'environ 1$. HydraFusion analyse la tâche demandée et déploie automatiquement un flux de travail coordonnant plusieurs modèles.
 
+### Comportement
+
+- Le filtre par catégorie affiche désormais toutes les icônes de la catégorie sélectionnée ; le lien « voir plus » est masqué pendant ce filtrage.
+
 ## [Unreleased] - 2026-05-13
 
 - Renommage des icônes

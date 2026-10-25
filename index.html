@@ -110,7 +110,10 @@
       <div x-show="!searchActive">
         <template x-for="cat in filteredCategories" :key="cat.id">
           <section class="iconlib-category" x-show="cat.icons.length">
-            <h2 class="iconlib-category-title" x-text="cat.label"></h2>
+            <h2 class="iconlib-category-title">
+              <span class="iconlib-category-title-label" x-text="cat.label"></span>
+              <span class="iconlib-category-count" x-text="`(${cat.icons.length})`"></span>
+            </h2>
             <div class="iconlib-grid">
               <template x-for="icon in (isCategoryExpanded(cat.id) ? cat.icons : cat.icons.slice(0, 6))" :key="icon.id">
                 <button class="iconlib-card" @click="openModal(icon, cat)" :aria-label="icon.name">
@@ -119,11 +122,11 @@
                 </button>
               </template>
             </div>
-            <template x-if="cat.icons.length > 6">
+            <template x-if="cat.icons.length > 6 && !categoryFilter">
               <button
                 class="iconlib-voir-plus"
                 @click="toggleCategory(cat.id)"
-                x-text="isCategoryExpanded(cat.id) ? 'voir moins' : 'voir plus'"
+                x-text="isCategoryExpanded(cat.id) ? 'voir moins' : `voir ${cat.icons.length - 6} de plus`"
               ></button>
             </template>
           </section>

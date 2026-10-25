@@ -71,6 +71,7 @@ window.iconGallery = function iconGallery() {
       }
     },
     isCategoryExpanded(id) {
+      if (this.categoryFilter === id) return true;
       return this.expandedCategories.includes(id);
     },
     openModal(icon, cat) {
